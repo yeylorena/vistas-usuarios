@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <script src="Js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" style="height: 54px;">
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <div class="col d-flex flex-row">
+                        <img src="Img/logo.png" alt="Logo de la empresa" class="mx-3" style="max-width: 10%;">
+                        <button class="navbar-toggler border-0 mx-3" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col d-flex flex-row-reverse">
+                        <div class="dropdown mx-3">
+                            <img src="" alt="Foto del usurio">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Esteban Carvajal
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <img src="" alt="Mensaje" class="mx-3">
+                        <img src="" alt="Notificación" class="mx-3">
+                    </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row" style="background-color: #9FAFE8;">
+            <h1 class="mt-5 ms-5 col-2">Mensajería</h1>
+            <div class="row m-5 col-11 p-0 text-bg-light" style="background-color: #ffff;">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid p-0">
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active mx-3" aria-current="page" href="#">Nuevo mensaje</a>
+                                <a class="nav-link active mx-3" aria-current="page" href="#">Recibidos</a>
+                                <a class="nav-link active mx-3" aria-current="page" href="#">Enviados</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary my-2">
+                    <div class="container-fluid p-0">
+                        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Seleccionado</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Todo</label>
+                                </div>
+                                <button class="btn py-0 border-0">Eliminar <img src="" alt="Logo de eliminar"></button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <table class="table table-info border border-dark mx-auto" style="max-width: 90%;">
+                    <thead>
+                        <tr>
+                            <th class="fw-normal" scope="col" style="background-color: transparent;">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <img src="" alt="Estrella">
+                                    </label>
+                                </div>
+                            </th>
+                            <th scope="col" style="background-color: transparent;">Comunicado</th>
+                            <th class="fw-normal" scope="col" style="background-color: transparent;">Este es un comunicado de prueba, para ver el diseño del
+                                mockup...</th>
+                            <th class="fw-normal" scope="col" style="background-color: transparent;">18:30</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" >
+                                <div class="form-check fw-normal">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <img src="" alt="Estrella">
+                                    </label>
+                                </div>
+                            </th>
+                            <td class="fw-bold">Comunicado</td>
+                            <td>Este es un comunicado de prueba, para ver el diseño del mockup...</td>
+                            <td>18:30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="form-check fw-normal">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <img src="" alt="Estrella">
+                                    </label>
+                                </div>
+                            </th>
+                            <td class="fw-bold">Comunicado</td>
+                            <td>Este es un comunicado de prueba, para ver el diseño del mockup...</td>
+                            <td>18:30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="form-check fw-normal">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <img src="" alt="Estrella">
+                                    </label>
+                                </div>
+                            </th>
+                            <td class="fw-bold">Comunicado</td>
+                            <td>Este es un comunicado de prueba, para ver el diseño del mockup...</td>
+                            <td>18:30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="form-check fw-normal">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <img src="" alt="Estrella">
+                                    </label>
+                                </div>
+                            </th>
+                            <td class="fw-bold">Comunicado</td>
+                            <td>Este es un comunicado de prueba, para ver el diseño del mockup...</td>
+                            <td>18:30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="form-check fw-normal">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <img src="" alt="Estrella">
+                                    </label>
+                                </div>
+                            </th>
+                            <td class="fw-bold">Comunicado</td>
+                            <td>Este es un comunicado de prueba, para ver el diseño del mockup...</td>
+                            <td>18:30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="form-check fw-normal">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <img src="" alt="Estrella">
+                                    </label>
+                                </div>
+                            </th>
+                            <td class="fw-bold">Comunicado</td>
+                            <td>Este es un comunicado de prueba, para ver el diseño del mockup...</td>
+                            <td>18:30</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row d-flex flex-row justify-content-end">
+                    <p class="m-0" style="max-width: 1%;"><img src="" alt="next"></p>
+                    <p class="m-0" style="max-width: 1%;">1</p>
+                    <p class="m-0" style="max-width: 1%;">2</p>
+                    <p class="m-0" style="max-width: 1%;">3</p>
+                    <p class="m-0" style="max-width: 1%;">4</p>
+                    <p class="m-0" style="max-width: 1%;"><img src="" alt="next"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
