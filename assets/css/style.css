@@ -25,7 +25,7 @@ a {
 }
 
 a:hover {
-  color: #717ff5;
+  color: #2338f5;
   text-decoration: none;
 }
 
@@ -64,7 +64,7 @@ h6 {
   font-size: 24px;
   margin-bottom: 0;
   font-weight: 600;
-  color: #012970;
+  color: black;
 }
 
 /*--------------------------------------------------------------
@@ -216,6 +216,237 @@ h6 {
   border-color: #d3d3d4;
 }
 
+/*Efectos cartas productos y servicios*/
+.catAlimentos {
+  background: #d9d9d9;
+}
+
+.catAlimentos:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+  transform: translateY(-3%);
+  transition: all 400ms ease;
+  background: #9FAFE8;
+}
+
+.card-text {
+  max-height: 50%;
+}
+
+.catAccesorios {
+  background: #d9d9d9;
+}
+
+.catAccesorios:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+  transform: translateY(-3%);
+  transition: all 400ms ease;
+  background: #d6e786;
+}
+
+.catAseo {
+  background: #d9d9d9;
+}
+
+.catAseo:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+  transform: translateY(-3%);
+  transition: all 400ms ease;
+  background: rgb(134, 231, 147);
+}
+
+.catMedicamentos {
+  background: #d9d9d9;
+}
+
+.catMedicamentos:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+  transform: translateY(-3%);
+  transition: all 400ms ease;
+  background: rgb(111, 189, 248);
+}
+
+.catEstetica {
+  background: #d9d9d9;
+}
+
+.catEstetica:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+  transform: translateY(-3%);
+  transition: all 400ms ease;
+  background: rgb(236, 176, 228);
+}
+
+.catUrgencias {
+  background: #d9d9d9;
+}
+
+.catUrgencias:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+  transform: translateY(-3%);
+  transition: all 400ms ease;
+  background: rgb(255, 159, 159);
+}
+
+.catLaboratorio {
+  background: #d9d9d9;
+}
+
+.catLaboratorio:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+  transform: translateY(-3%);
+  transition: all 400ms ease;
+  background: rgb(192, 111, 192);
+}
+
+.catVacunacion {
+  background: #d9d9d9;
+}
+
+.catVacunacion:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+  transform: translateY(-3%);
+  transition: all 400ms ease;
+  background: #03e9f4;
+}
+
+.catCitas {
+  background: #d9d9d9;
+}
+
+.catCitas:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+  transform: translateY(-3%);
+  transition: all 400ms ease;
+  background: lightslategrey;
+}
+
+.textoNeon {
+  padding: 5px;
+  background-color: black;
+  color: white;
+
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 100;
+  letter-spacing: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 1s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.textoNeon:hover {
+  text-shadow: 0 0 8px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.card-stock {
+  color: #04a512;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-agotado {
+  color: rgb(204, 10, 10);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*Efecto cartas categoría*/
+.alimentos:hover img {
+  transform: scale(1.1);
+  transition: all .5s;
+  object-fit: cover;
+}
+
+.accesorios:hover img {
+  transform: scale(1.1);
+  transition: all .5s;
+  object-fit: cover;
+}
+
+.aseo:hover img {
+  transform: scale(1.1);
+  transition: all .5s;
+  object-fit: cover;
+}
+
+.medicamentos:hover img {
+  transform: scale(1.1);
+  transition: all .5s;
+  object-fit: cover;
+}
+
+.estetica:hover img {
+  transform: scale(1.1);
+  transition: all .5s;
+  object-fit: cover;
+}
+
+.urgencias:hover img {
+  transform: scale(1.1);
+  transition: all .5s;
+  object-fit: cover;
+}
+
+.laboratorio:hover img {
+  transform: scale(1.1);
+  transition: all .5s;
+  object-fit: cover;
+}
+
+.vacunas:hover img {
+  transform: scale(1.1);
+  transition: all .5s;
+  object-fit: cover;
+}
+
+.citas:hover img {
+  transform: scale(1.1);
+  transition: all .5s;
+  object-fit: cover;
+}
+
+.alimentos:hover {
+  background: #9FAFE8;
+}
+
+.accesorios:hover {
+  background: #d6e786;
+}
+
+.aseo:hover {
+  background: rgb(134, 231, 147);
+}
+
+.medicamentos:hover {
+  background: rgb(111, 189, 248);
+}
+
+.estetica:hover {
+  background: rgb(236, 176, 228);
+}
+
+.urgencias:hover {
+  background: rgb(255, 159, 159);
+}
+
+.laboratorio:hover {
+  background: rgb(192, 111, 192);
+}
+
+.vacunas:hover {
+  background: #03e9f4;
+}
+
+.citas:hover {
+  background: lightslategrey;
+}
+
+
+
+
 /* Card */
 .card {
   margin-bottom: 30px;
@@ -307,12 +538,12 @@ h6 {
 .breadcrumb {
   font-size: 14px;
   font-family: "Nunito", sans-serif;
-  color: #899bbd;
+  color: black;
   font-weight: 600;
 }
 
 .breadcrumb a {
-  color: #899bbd;
+  color: black;
   transition: 0.3s;
 }
 
@@ -325,7 +556,7 @@ h6 {
 }
 
 .breadcrumb .active {
-  color: #51678f;
+  color: black;
   font-weight: 600;
 }
 
@@ -610,7 +841,7 @@ h6 {
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
   box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
-  background-color: #fff;
+  background-color: white;
 }
 
 @media (max-width: 1199px) {
