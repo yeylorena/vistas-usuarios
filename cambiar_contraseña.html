@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Registro Usuario</title>
+  <title>Cambiar Contraseña</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -33,7 +33,7 @@
   <main>
     <div class="container">
 
-      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-0">
+      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-1">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
@@ -42,54 +42,38 @@
                   <img src="./img/image 14.png" alt="" style="width: 200px;">
               </div><!-- End Logo -->
 
-              <div class="card mb-3 ">
+              <div class="card mb-3">
 
-                <div class="card-body" style="background: #FFFFFF;
+                <div class="card-body " style="width: 400px; background: #FFFFFF;
                 border: 1px solid #000000;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 ">
 
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4"> Crear una cuenta</h5>
-                    <p class="text-center small">Ingrese la siguiente información para crear una cuenta</p>
+                    <h5 class="card-title text-center pb-0 fs-4">Cambiar contraseña</h5>
+                    <p class="text-center small">Ingrese una nueva contraseña</p>
                   </div>
 
                   <form class="row g-3 needs-validation" novalidate>
                     <div class="col-12">
-                      <label for="yourName" class="form-label">Usuario</label>
+                      <label for="yourName" class="form-label">Contraseña</label>
                       <input type="text" name="name" class="form-control" id="yourName" required>
-                      <div class="invalid-feedback">Escribe un nombre de usuario</div>
+                      <div class="invalid-feedback">Escribe tu nueva contraseña</div>
                     </div>
 
                     <div class="col-12">
-                        <label for="yourPassword" class="form-label">Contraseña</label>
-                        <input type="password" name="password" class="form-control" id="yourPassword" required>
-                        <div class="invalid-feedback">Escribe tu contraseña</div>
+                        <label for="yourName" class="form-label">Confirmar Contraseña </label>
+                        <input type="text" name="name" class="form-control" id="yourName" required>
+                        <div class="invalid-feedback">tu contraseña no coincide</div>
                       </div>
+                
   
 
-                    
-
+                   
                     <div class="col-12">
-                      <label for="yourPassword" class="form-label">Confirmar contraseña</label>
-                      <input type="password" name="password" class="form-control" id="yourPassword" required>
-                      <div class="invalid-feedback">Contraseña incorreta</div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
-                        <label class="form-check-label" for="acceptTerms">Acepto términos y condiciones </label>
-                        
-                      </div>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn c w-100" style="background-color: #979AD4; color: black;" type="submit">Crear cuenta</button>
+                        <button class="btn c w-100" style="background-color: #979AD4; color: black;" type="submit">Confirmar</button>
                     </div>
                     
-                    <div class="col-12">
-                      <p class="small mb-0">¿Ya tienes una cuenta?  <a href="login.html">Iniciar Sesión</a></p>
-                    </div>
                   </form>
 
                 </div>
