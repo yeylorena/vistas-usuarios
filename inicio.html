@@ -5,16 +5,20 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Perfil</title>
+  <title>Inicio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
  
+
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -22,14 +26,28 @@
   <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
-<link rel="stylesheet" href="./css/bootstrap.css">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+  
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
+}
+  </style>
 
 </head>
 
-<body >
+<body style="background-color: #9FAFE8;">
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
@@ -261,52 +279,141 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
-          <i class="bi bi-grid"></i>
-          <span>inicio</span>
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-person"></i>
+          <span>Inicio</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="perfil.html">
+          <i class="bi bi-person"></i>
+          <span>Mi perfil</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="productos_servicios.html">
+          <i class="bi bi-person"></i>
+          <span>Productos y servicios</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
       
     </ul>
     </aside>
+ <main id="main" class="main">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/nic.jpg" class="d-block w-100" alt="..." style="  max-width: 100%;
+        height: 700px;
+        display: block;
+        margin: 0 auto;">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/imagenes_inicio/fondo_2.jpg" class="d-block w-100" alt="..." style="   max-width: 100%;
+        height: 700px;
+        display: block;
+        margin: 0 auto;">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/imagenes_inicio/fondo_3.jpg" class="d-block w-100" alt="..." style="  max-width: 100%;
+        height: 700px;
+        display: block;
+        margin: 0 auto;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    <footer id="quienesSomosFooter" class="p-3 " style="background-color: #ffffff; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 64px; line-height: 50px;
+    text-align: center;">
+      <h3 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 35px;  line-height: 50px;
+      text-align: center;">Categorias</h3>
+    </footer>
 
-  <main id="main" class="main">
 
-    
-    <section class="section profile">
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/nic.jpg" class="d-block w-100" alt="...">
+
+    <section class="section" style="background-color: #D9D9D9;">
+      <div class="row">
+        <div class="col-lg-12">
+
+
+          <div class="carousel py-5">
+            <div class="carousel-container">
+              <div class="card my-4 card-hover"  style=" background-color: #9FAFE8;  border-radius: 40px;">
+                <img src="./img/imagenes_inicio/aliment.jpg" class="card-img-top" alt="..." style="border-radius: 30px; width: 300px; height: 200px; object-fit: cover;">
+                <div class="card-body " >
+                  <a href="#" class="btn  my-4" style="background-color: #ffffff; color: black; width: 170px; font-size: 20px; ">Alimentos</a>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="./img/nic.jpg" class="d-block w-100" alt="...">
+              <div class="card my-4 card-hover"  style=" background-color: #9FAFE8;  border-radius: 40px;">
+                <img src="./img/imagenes_inicio/accesorios.jpg" class="card-img-top" alt="..." style="border-radius: 30px; width: 300px; height: 200px; object-fit: cover;">
+                <div class="card-body " >
+                  <a href="#" class="btn  my-4" style="background-color: #ffffff; color: black; width: 170px; font-size: 20px; ">Accesorios</a>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="./img/nic.jpg" class="d-block w-100" alt="...">
+              <div class="card my-4 card-hover"  style=" background-color: #9FAFE8;  border-radius: 40px;">
+                <img src="./img/imagenes_inicio/aseo.jpg" class="card-img-top" alt="..." style="border-radius: 30px; width: 300px; height: 200px; object-fit: cover;">
+                <div class="card-body " >
+                  <a href="#" class="btn  my-4" style="background-color: #ffffff; color: black; width: 170px; font-size: 20px;">Aseo</a>
+                </div>
+              </div>
+              <div class="card my-4 card-hover"  style=" background-color: #9FAFE8;  border-radius: 40px;">
+                <img src="./img/imagenes_inicio/medicamentos.jpg" class="card-img-top" alt="..." style="border-radius: 30px; width: 300px; height: 200px; object-fit: cover;">
+                <div class="card-body " >
+                  <a href="#" class="btn  my-4" style="background-color: #ffffff; color: black; width: 170px; font-size: 20px;">Medicamentos</a>
+                </div>
+              </div>
+              <div class="card my-4 card-hover"  style=" background-color: #9FAFE8;  border-radius: 40px;">
+                <img src="./img/imagenes_inicio/estetica.jpg" class="card-img-top" alt="..." style="border-radius: 30px; width: 300px; height: 200px; object-fit: cover;">
+                <div class="card-body " >
+                  <a href="#" class="btn  my-4" style="background-color: #ffffff; color: black; width: 170px;">Estética</a>
+                </div>
+              </div>
+              <div class="card my-4 card-hover"  style=" background-color: #9FAFE8;  border-radius: 40px;">
+                <img src="./img/imagenes_inicio/veterianarias.jpg" class="card-img-top" alt="..." style="border-radius: 30px; width: 300px; height: 200px; object-fit: cover;">
+                <div class="card-body " >
+                  <a href="#" class="btn  my-4" style="background-color: #ffffff; color: black; width: 170px;">Urgencias</a>
+                </div>
+              </div>
+              <div class="card my-4 card-hover"  style=" background-color: #9FAFE8;  border-radius: 40px;">
+                <img src="./img/imagenes_inicio/laboratorio.jpg" class="card-img-top" alt="..." style="border-radius: 30px; width: 300px; height: 200px; object-fit: cover;">
+                <div class="card-body " >
+                  <a href="#" class="btn  my-4" style="background-color: #ffffff; color: black; width: 170px;">Laboratorio</a>
+                </div>
+              </div>
+              <div class="card my-4 card-hover"  style=" background-color: #9FAFE8;  border-radius: 40px;">
+                <img src="./img/imagenes_inicio/Rectangle 1668.png" class="card-img-top" alt="..." style="border-radius: 30px; width: 300px; height: 200px; object-fit: cover;">
+                <div class="card-body " >
+                  <a href="#" class="btn  my-4" style="background-color: #ffffff; color: black; width: 170px;">Vacunación</a>
+                </div>
+              </div>
+              <div class="card my-4 card-hover"  style=" background-color: #9FAFE8;  border-radius: 40px;">
+                <img src="./img/imagenes_inicio/citasss.jpg" class="card-img-top" alt="..." style="border-radius: 30px; width: 300px; height: 200px; object-fit: cover;">
+                <div class="card-body " >
+                  <a href="#" class="btn  my-4" style="background-color: #ffffff; color: black; width: 170px;">Citas</a>
+                </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <button id="antes" class="prev-btn">&lt;</button>
+            <button id="despues" class="next-btn">&gt;</button>
           </div>
-
-          <footer id="quienesSomosFooter" class="p-3 " style="background-color: #9FAFE8; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 64px; line-height: 50px;
-          text-align: center;">
-            <h3 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 35px;  line-height: 50px;
-            text-align: center;">Categorias</h3>
-          </footer>
-
+        </div>
+      </div>
+      </div>
+    </section>
+ 
 
   </main><!-- End #main -->
 
- 
+  <!-- ======= Footer ======= -->
+  
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -321,6 +428,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/app.js"></script>
 
 </body>
 
