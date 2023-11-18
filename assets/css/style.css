@@ -465,6 +465,17 @@ h6 {
   object-fit: cover;
 }
 
+.perfil{
+  border-radius: 60%;
+  
+}
+
+
+
+/*Foto mascota*/
+.imgMascota{
+  border: black 0.1rem solid;
+}
 .alimentos:hover {
   background: #9FAFE8;
 }

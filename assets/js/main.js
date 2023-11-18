@@ -5,6 +5,12 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+/*Funcióndeagregar al carrito */
+function agregarCarrito() {
+  alert("Agregado a carrito");
+}
+
 (function() {
   "use strict";
 
