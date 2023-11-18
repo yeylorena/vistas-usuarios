@@ -1,87 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User/Página principal</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User/Página principal</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
 
-    <!-- Favicons -->
-    <link href="../img/productos_servicios/logo.png" rel="icon">
+  <!-- Favicons -->
+  <link href="../img/productos_servicios/logo.png" rel="icon">
 
-    <style>
-      html{
-        scroll-behavior: smooth;
-        scroll-padding: 10rem;
-      }
-      
-  .card-hover {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding: 10rem;
+    }
 
-  .card-hover:hover {
-    transform: scale(1.05);
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
-  }
-    </style>
+    .card-hover {
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .card-hover:hover {
+      transform: scale(1.05);
+      box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
+    }
+  </style>
 </head>
+
 <body>
 
   <div class="container-fluid">
     <div class="row">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid col-md-12">
-            <img src="./img/image 14.png" alt="" style="margin-right: 40px;" width="100px">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="./img/image 14.png" alt="" style="margin-right: 40px;" width="100px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page"  style="margin-right: 100px; font-family: 'Inter'; font-style: italic; font-weight: 900;font-size: 30px; line-height: 50px;
+                <a class="nav-link active" aria-current="page" style="margin-right: 100px; font-family: 'Inter'; font-style: italic; font-weight: 900;font-size: 30px; line-height: 50px;
                 ">GesVet</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#quienesSomosFooter" style=" margin-right: 100px; font-family: 'Inter'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 50px;">¿Quiénes Somos?</a>
-             </li>
-             
-             
-             <li class="nav-item">
-              <a class="nav-link" href="#nuestros-servicios" style="margin-right: 100px; font-family: 'Inter'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 50px;">Servicios</a>
-           </li>
-           
-           <li class="nav-item">
-            <a class="nav-link" href="#contacto" style="margin-right: 100px; font-family: 'Inter'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 50px;">Contactos</a>
-        </li>
-        
-             <!-- First dropdown button -->
-<li class="nav-item dropdown my-1">
-    <a class="nav-link custom-btn" href="#" style="margin-right: 25px; font-family: 'Inter';
-    font-weight: 600;
-    font-size: 18px;
-   border-radius: 8px; color: #000000; background-color: #9FAFE8; border-color: #9FAFE8;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        REGISTRATE 
-    </a>
-    <ul class="dropdown-menu" style="background-color: #D9D9D9; border: 1px solid #000;">
-      <li><a class="dropdown-item" href="#" >ADMINISTRADOR</a></li>
-      <li><a class="dropdown-item" href="registro.html">USUARIO</a></li>
-  </ul>
-  
-</li>
+                <a class="nav-link" href="#quienesSomosFooter"
+                  style=" margin-right: 100px; font-family: 'Inter'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 50px;">¿Quiénes
+                  Somos?</a>
+              </li>
 
-<!-- Second dropdown button -->
-<li class="nav-item dropdown my-1 ">
-    <a class="nav-link custom-btn " href="#" style="margin-right: 25px; font-family: 'Inter';
+
+              <li class="nav-item">
+                <a class="nav-link" href="#nuestros-servicios"
+                  style="margin-right: 100px; font-family: 'Inter'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 50px;">Servicios</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto"
+                  style="margin-right: 100px; font-family: 'Inter'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 50px;">Contactos</a>
+              </li>
+
+              <!-- First dropdown button -->
+              <li class="nav-item dropdown my-1">
+                <a class="nav-link custom-btn" href="#" style="margin-right: 25px; font-family: 'Inter';
     font-weight: 600;
     font-size: 18px;
-   border-radius: 8px; color: #000000; background-color: #9FAFE8; border-color: #9FAFE8;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    INGRESA YA
-    </a>
-    <ul class="dropdown-menu" style="background-color: #D9D9D9; border: 1px solid #000;">
-      <li><a class="dropdown-item" href="#" >ADMINISTRADOR</a></li>
-      <li><a class="dropdown-item" href="login.html">USUARIO</a></li>
-  </ul>
-</li>
+   border-radius: 8px; color: #000000; background-color: #9FAFE8; border-color: #9FAFE8;" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  REGISTRATE
+                </a>
+                <ul class="dropdown-menu" style="background-color: #D9D9D9; border: 1px solid #000;">
+                  <li><a class="dropdown-item" href="#">ADMINISTRADOR</a></li>
+                  <li><a class="dropdown-item" href="registro.html">USUARIO</a></li>
+                </ul>
+
+              </li>
+
+              <!-- Second dropdown button -->
+              <li class="nav-item dropdown my-1 ">
+                <a class="nav-link custom-btn " href="#" style="margin-right: 25px; font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+   border-radius: 8px; color: #000000; background-color: #9FAFE8; border-color: #9FAFE8;" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  INGRESA YA
+                </a>
+                <ul class="dropdown-menu" style="background-color: #D9D9D9; border: 1px solid #000;">
+                  <li><a class="dropdown-item" href="#">ADMINISTRADOR</a></li>
+                  <li><a class="dropdown-item" href="login.html">USUARIO</a></li>
+                </ul>
+              </li>
 
             </ul>
           </div>
@@ -89,38 +98,38 @@
       </nav>
     </div>
   </div>
- 
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/Rectangle 4.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/blavk.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/beneficios.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-  
-      <footer id="quienesSomosFooter" class="p-3 " style="background-color: #9FAFE8; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 64px; line-height: 50px;
-      text-align: center;">
-        <h1 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 50px; line-height: 50px;
-        text-align: center;">GesVet</h1>
-        <h3 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 35px;  line-height: 50px;
-        text-align: center;">Conoce un poco de nosotros</h3>
-      </footer>
 
-      <footer  class="p-3" style="background-color: #D9D9D9; font-family: 'Inter';
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/Rectangle 4.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/blavk.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/beneficios.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <footer id="quienesSomosFooter" class="p-3 " style="background-color: #9FAFE8; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 64px; line-height: 50px;
+      text-align: center;">
+    <h1 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 50px; line-height: 50px;
+        text-align: center;">GesVet</h1>
+    <h3 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 35px;  line-height: 50px;
+        text-align: center;">Conoce un poco de nosotros</h3>
+  </footer>
+
+  <footer class="p-3" style="background-color: #D9D9D9; font-family: 'Inter';
       font-style: normal;
       font-weight: 500;
       font-size: 10px;
@@ -129,20 +138,26 @@
       text-align: justify;
       
       ">
-        <h3 class="p-5" style="text-align: center;">Desde el año 2024, GesVet se ha convertido en un referente en la ciudad de Neiva en cuanto a la atención de servicios y emergencias veterinarias. Nuestro equipo de profesionales altamente entrenados y capacitados se ha dedicado a llevar a cabo una misión que consideramos fundamental: brindar atención veterinaria de excelencia a todas las mascotas de la ciudad de Neiva. Ya sea que tengas un perrito o un gatito, en GesVet estamos comprometidos a ayudar en cualquier situación que se presente. Nuestra pasión es el cuidado de los animales, y estamos aquí para asegurarnos de que todas las mascotas reciban el cuidado y la atención que merecen.</h3>
-      </footer>
-    
-      <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-3 g-4 p-3 " style="background-color: #9FAFE8;">
-        <div class="col">
-          <div class="card h-100 card-hover" >
-            <div class="card-body" style=" box-sizing: border-box; background: #D9D9D9;
+    <h3 class="p-5" style="text-align: center;">Desde el año 2024, GesVet se ha convertido en un referente en la ciudad
+      de Neiva en cuanto a la atención de servicios y emergencias veterinarias. Nuestro equipo de profesionales
+      altamente entrenados y capacitados se ha dedicado a llevar a cabo una misión que consideramos fundamental: brindar
+      atención veterinaria de excelencia a todas las mascotas de la ciudad de Neiva. Ya sea que tengas un perrito o un
+      gatito, en GesVet estamos comprometidos a ayudar en cualquier situación que se presente. Nuestra pasión es el
+      cuidado de los animales, y estamos aquí para asegurarnos de que todas las mascotas reciban el cuidado y la
+      atención que merecen.</h3>
+  </footer>
+
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-3 " style="background-color: #9FAFE8;">
+      <div class="col">
+        <div class="card h-100 card-hover">
+          <div class="card-body" style=" box-sizing: border-box; background: #D9D9D9;
             border: 1px solid #000000;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
             ">
-              <h5 class="card-title p-2" style="text-align: center;">MISIÓN</h5>
-              <br>
-              <p class="card-text p-2" style="font-family: 'Inter';
+            <h5 class="card-title p-2" style="text-align: center;">MISIÓN</h5>
+            <br>
+            <p class="card-text p-2" style="font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -150,19 +165,21 @@ line-height: 24px;
 text-align: center;
 
 color: #000000;
-">Brindar atención veterinaria de excelencia a todas las mascotas de la ciudad de Neiva, comprometiéndonos a ayudar en cualquier situación que se presente y asegurándonos de que todas las mascotas reciban el cuidado y la atención que merecen.</p>
-            </div>
+">Brindar atención veterinaria de excelencia a todas las mascotas de la ciudad de Neiva, comprometiéndonos a ayudar en
+              cualquier situación que se presente y asegurándonos de que todas las mascotas reciban el cuidado y la
+              atención que merecen.</p>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100 card-hover" >
-            <div class="card-body" style=" box-sizing: border-box; background: #D9D9D9;
+      </div>
+      <div class="col">
+        <div class="card h-100 card-hover">
+          <div class="card-body" style=" box-sizing: border-box; background: #D9D9D9;
             border: 1px solid #000000;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
             ">
-              <h5 class="card-title p-2" style="text-align: center;">VISIÓN</h5>
-              <br>
-              <p class="card-text p-2" style="font-family: 'Inter';
+            <h5 class="card-title p-2" style="text-align: center;">VISIÓN</h5>
+            <br>
+            <p class="card-text p-2" style="font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -170,19 +187,20 @@ line-height: 24px;
 text-align: center;
 
 color: #000000;
-">Convertirnos en la clínica veterinaria líder en la ciudad de Neiva, reconocida por nuestra atención de excelencia y nuestro compromiso con el bienestar animal.</p>
-            </div>
+">Convertirnos en la clínica veterinaria líder en la ciudad de Neiva, reconocida por nuestra atención de excelencia y
+              nuestro compromiso con el bienestar animal.</p>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100 card-hover" >
-            <div class="card-body" style=" box-sizing: border-box; background: #D9D9D9;
+      </div>
+      <div class="col">
+        <div class="card h-100 card-hover">
+          <div class="card-body" style=" box-sizing: border-box; background: #D9D9D9;
             border: 1px solid #000000;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
             ">
-              <h5 class="card-title p-2" style="text-align: center;">VALORES</h5>
-              <br>
-              <p class="card-text p-2" style="font-family: 'Inter';
+            <h5 class="card-title p-2" style="text-align: center;">VALORES</h5>
+            <br>
+            <p class="card-text p-2" style="font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -191,32 +209,33 @@ text-align: center;
 
 color: #000000;
 ">- Compromiso con el bienestar animal
-<br>
-- Atención de excelencia
-<br>
-- Profesionalismo y ética
-<br>
-- Trabajo en equipo y colaboración
-<br>
-- Innovación y mejora continua</p>
-            </div>
+              <br>
+              - Atención de excelencia
+              <br>
+              - Profesionalismo y ética
+              <br>
+              - Trabajo en equipo y colaboración
+              <br>
+              - Innovación y mejora continua
+            </p>
           </div>
         </div>
       </div>
     </div>
-    
-      <footer  id="nuestros-servicios" class="p-3 " style="background-color: #D9D9D9; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 10px; line-height: 50px;
+  </div>
+
+  <footer id="nuestros-servicios" class="p-3 " style="background-color: #D9D9D9; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 10px; line-height: 50px;
       text-align: center;">
-        <h1 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 30px; line-height: 50px;
+    <h1 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 30px; line-height: 50px;
         text-align: center;">NUESTROS SERVICIOS</h1>
-      </footer>
-      
-      <div class="container-fluid " style="background-color: #9FAFE8;">
-      <div class="row col-md-12">
-        <div class="col-md-6">
-          <h1 class="p-4" style="text-align: center; font-size: 50px;">GesVet</h1>
-          <br>
-<p  class="p-5" style="font-family: 'Inter';
+  </footer>
+
+  <div class="container-fluid " style="background-color: #9FAFE8;">
+    <div class="row col-md-12">
+      <div class="col-md-6">
+        <h1 class="p-4" style="text-align: center; font-size: 50px;">GesVet</h1>
+        <br>
+        <p class="p-5" style="font-family: 'Inter';
  font-style: normal;
       font-weight: 100;
       font-size: 25px;
@@ -225,55 +244,56 @@ color: #000000;
       text-align: center;
 
 color: #000000;
-">En nuestra clínica veterinaria, nos enorgullece brindar una amplia variedad de servicios de alta calidad para asegurarnos de que tus mascotas reciban la mejor atención posible. </p>
-        </div>
-        <div class="col-md-6" style="text-align: center;">
-          <img class="p-5" style="width: 400px;" src="./img/Ellipse 32.png" alt="">
-        </div>
-
+">En nuestra clínica veterinaria, nos enorgullece brindar una amplia variedad de servicios de alta calidad para
+          asegurarnos de que tus mascotas reciban la mejor atención posible. </p>
+      </div>
+      <div class="col-md-6" style="text-align: center;">
+        <img class="p-5" style="width: 400px;" src="./img/Ellipse 32.png" alt="">
       </div>
 
-      </div>
+    </div>
 
-      <footer class="p-3 " style="background-color: #D9D9D9; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 10px; line-height: 50px;
+  </div>
+
+  <footer class="p-3 " style="background-color: #D9D9D9; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 10px; line-height: 50px;
       text-align: center;">
-        <h1 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 30px; line-height: 50px;
+    <h1 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 30px; line-height: 50px;
         text-align: center;">¡Todo para el cuidado de tu mejor amigo!</h1>
-      </footer>
+  </footer>
 
-      <div class="container-fluid">
-        <div class="row col-md-12">
-          <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
-            <div class="card card-hover " style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
+  <div class="container-fluid">
+    <div class="row col-md-12">
+      <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
+        <div class="card card-hover " style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
                 border: 1px solid #000000;
                 border-radius: 30px;
                 box-sizing: border-box; ">
-                <!-- Center the image -->
-                <img src="./img/Ellipse 27.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
-                <div class="card-body d-flex flex-column">
-                    <!-- Reduce the button width -->
-                    <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+          <!-- Center the image -->
+          <img src="./img/Ellipse 27.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
+          <div class="card-body d-flex flex-column">
+            <!-- Reduce the button width -->
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
                         border-radius: 8px;
                         font-family: 'Inter';
                         font-style: normal;
                         font-weight: 600;
                         font-size: 18px;
                         line-height: 40px;">
-                        Baño
-                    </a>
-                </div>
-            </div>
+              Baño
+            </a>
+          </div>
         </div>
-        <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
-          <div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
+      </div>
+      <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
+        <div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
               border: 1px solid #000000;
               border-radius: 30px;
               box-sizing: border-box; ">
-              <!-- Center the image -->
-              <img src="./img/Ellipse 4.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
-              <div class="card-body d-flex flex-column">
-                  <!-- Reduce the button width -->
-                  <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+          <!-- Center the image -->
+          <img src="./img/Ellipse 4.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
+          <div class="card-body d-flex flex-column">
+            <!-- Reduce the button width -->
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
                       border-radius: 8px;
                       font-family: 'Inter';
                       font-style: normal;
@@ -281,21 +301,21 @@ color: #000000;
                       font-size: 18px; 
                       line-height: 40px; 
                       color: #000000;">
-                      Alimentos
-                  </a>
-              </div>
+              Alimentos
+            </a>
           </div>
+        </div>
       </div>
       <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
         <div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
             border: 1px solid #000000;
             border-radius: 30px;
             box-sizing: border-box; ">
-            <!-- Center the image -->
-            <img src="./img/Ellipse 6.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
-            <div class="card-body d-flex flex-column">
-                <!-- Reduce the button width -->
-                <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+          <!-- Center the image -->
+          <img src="./img/Ellipse 6.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
+          <div class="card-body d-flex flex-column">
+            <!-- Reduce the button width -->
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
                     border-radius: 8px;
                     font-family: 'Inter';
                     font-style: normal;
@@ -303,21 +323,21 @@ color: #000000;
                     font-size: 18px; 
                     line-height: 40px; 
                     color: #000000;">
-                    Medicamentos
-                </a>
-            </div>
+              Medicamentos
+            </a>
+          </div>
         </div>
-    </div>
-    <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
-      <div class="card  card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
+      </div>
+      <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
+        <div class="card  card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
           border: 1px solid #000000;
           border-radius: 30px;
           box-sizing: border-box; ">
           <!-- Center the image -->
           <img src="./img/Ellipse 28.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
-              <!-- Reduce the button width -->
-              <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <!-- Reduce the button width -->
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
                   border-radius: 8px;
                   font-family: 'Inter';
                   font-style: normal;
@@ -325,13 +345,13 @@ color: #000000;
                   font-size: 18px; 
                   line-height: 40px; 
                   color: #000000;">
-                  Peluqueria
-              </a>
+              Peluqueria
+            </a>
           </div>
+        </div>
       </div>
+    </div>
   </div>
-    </div>  
-  </div>   
 
   <div class="container-fluid">
     <div class="row col-md-12">
@@ -340,11 +360,11 @@ color: #000000;
             border: 1px solid #000000;
             border-radius: 30px;
             box-sizing: border-box; ">
-            <!-- Center the image -->
-            <img src="./img/Ellipse 21.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
-            <div class="card-body d-flex flex-column">
-                <!-- Reduce the button width -->
-                <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+          <!-- Center the image -->
+          <img src="./img/Ellipse 21.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
+          <div class="card-body d-flex flex-column">
+            <!-- Reduce the button width -->
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
                     border-radius: 8px;
                     font-family: 'Inter';
                     font-style: normal;
@@ -352,21 +372,21 @@ color: #000000;
                     font-size: 18px; 
                     line-height: 40px;
                     color: #000000;">
-                    Guarderia
-                </a>
-            </div>
+              Guarderia
+            </a>
+          </div>
         </div>
-    </div>
-    <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
-      <div class="card  card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
+      </div>
+      <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
+        <div class="card  card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
           border: 1px solid #000000;
           border-radius: 30px;
           box-sizing: border-box; ">
           <!-- Center the image -->
           <img src="./img/Ellipse 29.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
-              <!-- Reduce the button width -->
-              <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <!-- Reduce the button width -->
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
                   border-radius: 8px;
                   font-family: 'Inter';
                   font-style: normal;
@@ -374,19 +394,19 @@ color: #000000;
                   font-size: 18px; 
                   line-height: 40px; 
                   color: #000000;">
-                  Hospitalización
-              </a>
+              Hospitalización
+            </a>
           </div>
+        </div>
       </div>
-  </div>
-  <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
-    <div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
+      <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
+        <div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
         border: 1px solid #000000;
         border-radius: 30px;
         box-sizing: border-box; ">
-        <!-- Center the image -->
-        <img src="./img/Ellipse 30.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
-        <div class="card-body d-flex flex-column">
+          <!-- Center the image -->
+          <img src="./img/Ellipse 30.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
+          <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
             <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
                 border-radius: 8px;
@@ -396,21 +416,21 @@ color: #000000;
                 font-size: 18px;
                 line-height: 40px; 
                 color: #000000;">
-                Accesorios
+              Accesorios
             </a>
+          </div>
         </div>
-    </div>
-</div>
-<div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
-  <div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
+      </div>
+      <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
+        <div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
       border: 1px solid #000000;
       border-radius: 30px;
       box-sizing: border-box; ">
-      <!-- Center the image -->
-      <img src="./img/Ellipse 22.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
-      <div class="card-body d-flex flex-column">
-          <!-- Reduce the button width -->
-          <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+          <!-- Center the image -->
+          <img src="./img/Ellipse 22.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
+          <div class="card-body d-flex flex-column">
+            <!-- Reduce the button width -->
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
               border-radius: 8px;
               font-family: 'Inter';
               font-style: normal;
@@ -419,25 +439,25 @@ color: #000000;
               line-height: 40px;
               color: #000000;">
               Juguetes
-          </a>
+            </a>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
-</div>
-</div>  
-</div>   
 
-<div class="container-fluid">
-  <div class="row col-md-12">
-    <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
-      <div class="card card-hover " style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
+  <div class="container-fluid">
+    <div class="row col-md-12">
+      <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
+        <div class="card card-hover " style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
           border: 1px solid #000000;
           border-radius: 30px;
           box-sizing: border-box; ">
           <!-- Center the image -->
           <img src="./img/image 98.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
-              <!-- Reduce the button width -->
-              <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <!-- Reduce the button width -->
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
                   border-radius: 8px;
                   font-family: 'Inter';
                   font-style: normal;
@@ -445,19 +465,19 @@ color: #000000;
                   font-size: 18px; 
                   line-height: 40px; 
                   color: #000000;">
-                  Laboratorio
-              </a>
+              Laboratorio
+            </a>
           </div>
+        </div>
       </div>
-  </div>
-  <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
-    <div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
+      <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
+        <div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
         border: 1px solid #000000;
         border-radius: 30px;
         box-sizing: border-box; ">
-        <!-- Center the image -->
-        <img src="./img/image 99.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
-        <div class="card-body d-flex flex-column">
+          <!-- Center the image -->
+          <img src="./img/image 99.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
+          <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
             <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
                 border-radius: 8px;
@@ -467,21 +487,21 @@ color: #000000;
                 font-size: 18px;
                 line-height: 40px; 
                 color: #000000;">
-                Citas
+              Citas
             </a>
+          </div>
         </div>
-    </div>
-</div>
-<div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
-  <div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
+      </div>
+      <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
+        <div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
       border: 1px solid #000000;
       border-radius: 30px;
       box-sizing: border-box; ">
-      <!-- Center the image -->
-      <img src="./img/image 100.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
-      <div class="card-body d-flex flex-column">
-          <!-- Reduce the button width -->
-          <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+          <!-- Center the image -->
+          <img src="./img/image 100.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
+          <div class="card-body d-flex flex-column">
+            <!-- Reduce the button width -->
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
               border-radius: 8px;
               font-family: 'Inter';
               font-style: normal;
@@ -490,20 +510,20 @@ color: #000000;
               line-height: 40px; 
               color: #000000;">
               Vacunación
-          </a>
+            </a>
+          </div>
+        </div>
       </div>
-  </div>
-</div>
-<div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
-<div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
+      <div class="col-md-3 p-5 d-flex justify-content-center align-items-center">
+        <div class="card card-hover" style="width: 200px; background-color: #D9D9D9; text-align: center; background: #D9D9D9;
     border: 1px solid #000000;
     border-radius: 30px;
     box-sizing: border-box; ">
-    <!-- Center the image -->
-    <img src="./img/Ellipse 19.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
-    <div class="card-body d-flex flex-column">
-        <!-- Reduce the button width -->
-        <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+          <!-- Center the image -->
+          <img src="./img/Ellipse 19.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
+          <div class="card-body d-flex flex-column">
+            <!-- Reduce the button width -->
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
             border-radius: 8px;
             font-family: 'Inter';
             font-style: normal;
@@ -511,55 +531,60 @@ color: #000000;
             font-size: 18px; 
             line-height: 40px; 
             color: #000000;">
-            Mucho Más...
-        </a>
-    </div>
-</div>
-</div>
-</div>  
-</div>   
- 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63753.20144902977!2d-75.31367426908344!3d2.9377043590878045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b747c5a6b4009%3A0x69acf162bb25539a!2sNeiva%2C%20Huila!5e0!3m2!1ses-419!2sco!4v1699988145285!5m2!1ses-419!2sco" 
-              width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </div>
-</div>
-
-<footer  id="nuestros-servicios" class="p-3 " style="background-color: #D9D9D9; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 10px; line-height: 50px;
-text-align: center;">
-  <h1 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 30px; line-height: 50px;
-  text-align: center;">CONTACTO</h1>
-</footer>
-<div id="contacto" class="container-fluid  d-flex justify-content-center align-items-center" style="background-color: #9FAFE8;">
-  <div class="row col-md-12">
-    <div class="col-md-3 p-3 text-center">
-      <img class="p-3 mx-auto d-block" src="./img/Ellipse 32.png" alt="" style="width: 150px">
-    </div>
-    <div class="col-md-7 text-center">
-      <img class="p-3 mx-auto d-block" src="./img/image 40.png" alt="" style="width: 500px">
-    </div>
-    <div class="col-md-2 text-center p-3 text-end d-flex justify-content-center align-items-center">
-      <div id="circulo" style="width: 10rem; height: 10rem; border-radius: 50%; background:#D9D9D9; display: flex; justify-content: center; align-items: center; text-align: center;">
-          <p style="font-family: sans-serif; color: black; font-size: 10px; font-weight: bold;">Cl. 7 ## 25 - 53, Neiva, Huila, Colombia
-              <br>
-              Gesvet@gmail.com
-              <br>
-              URGENCIAS: 316 4986148
-          </p>
+              Mucho Más...
+            </a>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
-  
-  </div>
-</div>
 
-<div class="container-fluid " style="background-color: #9FAFE8;">
-<div class="row col-md-12  p-5">
-  <div class="colmd-12">
-<p style="font-family: 'Inter';
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63753.20144902977!2d-75.31367426908344!3d2.9377043590878045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b747c5a6b4009%3A0x69acf162bb25539a!2sNeiva%2C%20Huila!5e0!3m2!1ses-419!2sco!4v1699988145285!5m2!1ses-419!2sco"
+          width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer id="nuestros-servicios" class="p-3 " style="background-color: #D9D9D9; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 10px; line-height: 50px;
+text-align: center;">
+    <h1 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 30px; line-height: 50px;
+  text-align: center;">CONTACTO</h1>
+  </footer>
+  <div id="contacto" class="container-fluid  d-flex justify-content-center align-items-center"
+    style="background-color: #9FAFE8;">
+    <div class="row col-md-12">
+      <div class="col-md-3 p-3 text-center">
+        <img class="p-3 mx-auto d-block" src="./img/Ellipse 32.png" alt="" style="width: 150px">
+      </div>
+      <div class="col-md-7 text-center">
+        <img class="p-3 mx-auto d-block" src="./img/image 40.png" alt="" style="width: 500px">
+      </div>
+      <div class="col-md-2 text-center p-3 text-end d-flex justify-content-center align-items-center">
+        <div id="circulo"
+          style="width: 10rem; height: 10rem; border-radius: 50%; background:#D9D9D9; display: flex; justify-content: center; align-items: center; text-align: center;">
+          <p style="font-family: sans-serif; color: black; font-size: 10px; font-weight: bold;">Cl. 7 ## 25 - 53, Neiva,
+            Huila, Colombia
+            <br>
+            Gesvet@gmail.com
+            <br>
+            URGENCIAS: 316 4986148
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid " style="background-color: #9FAFE8;">
+    <div class="row col-md-12  p-5">
+      <div class="colmd-12">
+        <p style="font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
 font-size: 24px;
@@ -570,9 +595,9 @@ text-align: center;
 color: #000000;
 
 ">Cualquier consulta o solicitud de información específica, con mucho gusto le ayudaremos.</p>
-  </div>
-  <div class="col-md-6  p-2" >
-    <label for="inputEmail4" class="form-label" style="font-family: 'Inter';
+      </div>
+      <div class="col-md-6  p-2">
+        <label for="inputEmail4" class="form-label" style="font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -582,10 +607,10 @@ color: #000000;
     
     color: #000000;
     ">Nombre:</label>
-    <input type="text" class="form-control" id="inputEmail4">
-  </div>
-  <div class="col-md-6 p-2">
-    <label for="inputPassword4" class="form-label"  style="font-family: 'Inter';
+        <input type="text" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6 p-2">
+        <label for="inputPassword4" class="form-label" style="font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -595,10 +620,10 @@ color: #000000;
     
     color: #000000;
     ">Apellidos:</label>
-    <input type="text" class="form-control" id="inputPassword4">
-  </div>
-  <div class="col-md-6">
-    <label for="inputEmail4" class="form-label"  style="font-family: 'Inter';
+        <input type="text" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label" style="font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -608,10 +633,10 @@ color: #000000;
     
     color: #000000;
     ">Teléfono:</label>
-    <input type="text" class="form-control" id="inputEmail4">
-  </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label"  style="font-family: 'Inter';
+        <input type="text" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label" style="font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -621,10 +646,10 @@ color: #000000;
     
     color: #000000;
     ">Email:</label>
-    <input type="email" class="form-control" id="inputPassword4">
-  </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label"  style="font-family: 'Inter';
+        <input type="email" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label" style="font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -634,10 +659,10 @@ color: #000000;
     
     color: #000000;
     ">Dirección:</label>
-    <input type="text" class="form-control" id="inputPassword4">
-  </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label" style="font-family: 'Inter';
+        <input type="text" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label" style="font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -647,14 +672,14 @@ color: #000000;
     
     color: #000000;
     ">¿Cómo supo de nosotros?</label>
-    <input type="text" class="form-control" id="inputPassword4">
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="col-md-12 p-3 my-3">
-    <label for="exampleInputEmail1" class="form-label" style="text-align: center; font-family: 'Inter';
+        <input type="text" class="form-control" id="inputPassword4">
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="col-md-12 p-3 my-3">
+        <label for="exampleInputEmail1" class="form-label" style="text-align: center; font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -663,26 +688,28 @@ color: #000000;
     text-align: center;
     
     color: #000000;">Mensaje:</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 100%; height: 100px;">
-</div>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          style="width: 100%; height: 100px;">
+      </div>
 
-<button type="submit" class="btn btn-primary d-flex flex-column mx-auto text-center justify-content-center align-items-center" style="width: 14%;">Enviar</button>
+      <button type="submit"
+        class="btn btn-primary d-flex flex-column mx-auto text-center justify-content-center align-items-center"
+        style="width: 14%;">Enviar</button>
 
-</div>
-</div>
+    </div>
+  </div>
 
-<footer   style="background-color: #D9D9D9; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 10px; line-height: 50px;
+  <footer style="background-color: #D9D9D9; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 10px; line-height: 50px;
       text-align: center;">
-        <h1 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 15px; line-height: 50px;
+    <h1 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 15px; line-height: 50px;
         text-align: center;">© 2024 GesVet. Todos los derecho reservados</h1>
-      </footer>
+  </footer>
 
-  
-      
+
+
 
 </body>
+
 </html>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
