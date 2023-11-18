@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ges Vet</title>
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <script src="Js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" style="height: 54px;">
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <div class="col d-flex flex-row">
+                        <img src="Img/logo.png" alt="Logo de la empresa" class="mx-3" style="max-width: 10%;">
+                        <button class="navbar-toggler border-0 mx-3" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col d-flex flex-row-reverse">
+                        <div class="dropdown mx-3">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="Img/usuario.png" alt="Foto del usurio" style="max-width: 20%;">
+                                Esteban Carvajal
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
+                                <li><a class="dropdown-item" href="#">Configuración</a></li>
+                                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                            </ul>
+                        </div>
+                        <a href="#"><img src="Img/comentario.png" alt="Mensaje" class="mx-3 mt-3"
+                                style="max-width: 40%;"></a>
+                        <a href="#"><img src="Img/notificacion.png" alt="Notificación" class="mx-3 mt-3"
+                                style="max-width: 40%;"></a>
+                    </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row" style="background-color: #9FAFE8;">
+            <h1 class="mt-5 ms-5 col-4">Carrito de compra</h1>
+            <div class="row m-5 col-11 p-0 text-bg-light border border-dark" style="background-color: #ffff;">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+                    <div class="container-fluid p-0">
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active mx-3" aria-current="page" href="#"
+                                    style="text-decoration: underline;">Verifica</a>
+                                <a class="nav-link active mx-3" aria-current="page"
+                                    href="carrito_confirmar.html">Confirma</a>
+                                <a class="nav-link active mx-3" aria-current="page"
+                                    href="carrito_historial.html">Historial</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <table class="table border border-dark mx-auto text-center"
+                    style="max-width: 90%; background-color: #9d9d9d;">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="background-color: transparent;"></th>
+                            <th class="fw-bold" style="background-color: transparent;" scope="col">Código</th>
+                            <th class="fw-bold" style="background-color: transparent;" scope="col">Producto</th>
+                            <th class="fw-bold" style="background-color: transparent;" scope="col">Precio</th>
+                            <th class="fw-bold" style="background-color: transparent;" scope="col">Cantidad</th>
+                            <th class="fw-bold" style="background-color: transparent;" scope="col">Detalles</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+                        <tr>
+                            <th scope="row" style="background-color: transparent;">
+                                <button class="btn" onclick="eliminarFila(this)"><img src="Img/eliminar.png"
+                                        alt="Logo de eliminar"></button>
+                            </th>
+                            <td style="background-color: transparent;">001</td>
+                            <td style="background-color: transparent;">Shampoo</td>
+                            <td class="precio" style="background-color: transparent;">11.200</td>
+                            <td style="background-color: transparent;">1</td>
+                            <td style="background-color: transparent;">
+                                <img src="Img/consultar.png" alt="Logo de consultar">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="background-color: transparent;">
+                                <button class="btn" onclick="eliminarFila(this)"><img src="Img/eliminar.png"
+                                        alt="Logo de eliminar"></button>
+                            </th>
+                            <td style="background-color: transparent;">008</td>
+                            <td style="background-color: transparent;">Desparasitante</td>
+                            <td class="precio" style="background-color: transparent;">58.500</td>
+                            <td style="background-color: transparent;">1</td>
+                            <td style="background-color: transparent;">
+                                <img src="Img/consultar.png" alt="Logo de consultar">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="background-color: transparent;">
+                                <button class="btn" onclick="eliminarFila(this)"><img src="Img/eliminar.png"
+                                        alt="Logo de eliminar"></button>
+                            </th>
+                            <td style="background-color: transparent;">114</td>
+                            <td style="background-color: transparent;">Jabón</td>
+                            <td class="precio" style="background-color: transparent;">12.000</td>
+                            <td style="background-color: transparent;">1</td>
+                            <td style="background-color: transparent;">
+                                <img src="Img/consultar.png" alt="Logo de consultar">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="background-color: transparent;">
+                                <button class="btn" onclick="eliminarFila(this)"><img src="Img/eliminar.png"
+                                        alt="Logo de eliminar"></button>
+                            </th>
+                            <td style="background-color: transparent;">003</td>
+                            <td style="background-color: transparent;">Baño</td>
+                            <td class="precio" style="background-color: transparent;">35.000</td>
+                            <td style="background-color: transparent;">1</td>
+                            <td style="background-color: transparent;">
+                                <img src="Img/consultar.png" alt="Logo de consultar">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="background-color: transparent;">
+                                <button class="btn" onclick="eliminarFila(this)"><img src="Img/eliminar.png"
+                                        alt="Logo de eliminar"></button>
+                            </th>
+                            <td style="background-color: transparent;">101</td>
+                            <td style="background-color: transparent;">Croquetas</td>
+                            <td class="precio" style="background-color: transparent;">28.300</td>
+                            <td style="background-color: transparent;">1</td>
+                            <td style="background-color: transparent;">
+                                <img src="Img/consultar.png" alt="Logo de consultar">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="background-color: transparent;"></th>
+                            <td style="background-color: transparent;"></td>
+                            <td style="background-color: transparent;"></td>
+                            <td style="background-color: transparent;"></td>
+                            <td class="fw-bold" style="background-color: transparent;">Total</td>
+                            <td id="precio_total" style="background-color: transparent;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row d-flex mb-4">
+                    <button class="btn col-2 fw-bold" onclick="descartarCompra()" style="margin-left: 5%;">Descartar
+                        compra</button>
+                    <button class="btn col-1 ms-auto fw-bold"
+                        style="background-color: #9FAFE8; margin-right: 3%;">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="Js/script_verificar.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.2/dist/umd/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
