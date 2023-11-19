@@ -23,6 +23,7 @@
 
 .calificar-container {
   text-align: center;
+  margin-top: 130px;
 }
 
 .circulo-imagen {
@@ -42,6 +43,28 @@
 .circulo-imagen img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.circulo-perro {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  /* Ajusta el tamaño según sea necesario */
+  height: 200px;
+  /* Ajusta el tamaño según sea necesario */
+  margin: auto;
+  /* Centrar la imagen */
+  border: 2px solid #000;
+  
+  /* Agrega un contorno de 2px de ancho y color azul (#4154F1) */
+
+}
+
+.circulo-perro img {
+  width: 200%;
+  height: 100%;
+  text-align: center;
   object-fit: cover;
 }
 
@@ -444,17 +467,6 @@ h6 {
   object-fit: cover;
 }
 
-.perfil{
-  border-radius: 60%;
-  
-}
-
-
-
-/*Foto mascota*/
-.imgMascota{
-  border: black 0.1rem solid;
-}
 .alimentos:hover {
   background: #9FAFE8;
 }

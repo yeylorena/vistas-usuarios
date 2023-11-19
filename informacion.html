@@ -32,20 +32,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 
 
-
-
-
-
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body style="background-color: #5DADE2;">
@@ -316,7 +304,7 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="informacion.html">
           <i class="bi bi-info-circle"></i>
-          <span>Información Veterinaria</span>
+          <span>Información veterinaria</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
@@ -327,11 +315,11 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Información Veterinaria</h1>
+      <h1>Información veterinaria</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-          <li class="breadcrumb-item">informacion Veterinaria</li>
+          <li class="breadcrumb-item">Informacion veterinaria</li>
           <li class="breadcrumb-item active">Información</li>
         </ol>
       </nav>
@@ -361,6 +349,7 @@
               <div class="tab-content pt-2">
 
                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                  <!--Informacion-->
                   <div class="container">
                     <div class="row">
                       <p> <strong>Siempre estaremos disponibles para brindarte un gran servicio
@@ -411,25 +400,19 @@
                       </div>
                     </div>
                   </div>
-
-
                 </div>
+                <!--Fin información-->
 
                 <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
-                  <div id="contenidoDinamico"> </div>
+                  <!--Ver veterinarios-->
 
-                  <!-- Profile Edit Form -->
-                  <!-- Fila del título -->
+                  <div id="contenidoDinamico"> </div>
                   <div id="contenidoTabla">
                     <table class="table table-bordered text-center">
-
-
                       <thead>
-
                         <tr>
                           <th scope="col" colspan="4">Nuestro equipo de veterinarios</th>
                         </tr>
-
                         <tr>
                           <th scope="col">Nombre</th>
                           <th scope="col">Especialidad</th>
@@ -442,14 +425,12 @@
                           <th scope="row">Dra. Laura Gonzáles</th>
                           <td>Traumatología</td>
                           <td id="puntuacionPromedio">
-
                           </td>
                           <td>
                             <a href="javascript:void(0);" onclick="cargarNuevoContenido()" data-id="veterinario1">
                               <i class="fa-solid fa-circle-plus" style="color: #4154F1;"></i>
                             </a>
                           </td>
-
                         </tr>
                         <tr>
                           <th scope="row">Dr. Juan Perez</th>
@@ -482,37 +463,25 @@
                           <td>
                             <div id="rating5"></div> <!-- Agregado para la puntuación -->
                           </td>
-
                           <td><i class="fa-solid fa-circle-plus" style="color: #4154F1;"></i></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div><!-- End Bordered Tabs -->
-
               </div>
             </div>
-
           </div>
         </div>
       </div>
-
     </section>
+    <!--Fin ver veterinarios-->
 
   </main><!-- End #main -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-
-  <!-- ... (otros códigos) ... -->
-
-  <!-- ... (otros códigos) ... -->
-
-  <!-- ... (otros códigos) ... -->
-
-  <!-- Agregar esta función de JavaScript en el head -->
   <script>
     function cargarNuevoContenido(idVeterinario) {
       // Ocultar la tabla
@@ -549,7 +518,6 @@
       }
     }
 
-
     function regresar() {
       // Mostrar la tabla nuevamente
       document.getElementById('contenidoTabla').style.display = 'block';
@@ -557,8 +525,8 @@
       document.getElementById('contenidoDinamico').innerHTML = '';
     }
 
-
   </script>
+
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/chart.js/chart.umd.js"></script>

@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Mis mascotas</title>
+    <title>Mis citas</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-
-
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
-
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -27,11 +23,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
-    <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-
-
+    <!-- Favicons -->
+    <link href="../img/productos_servicios/logo.png" rel="icon">
 </head>
 
 <body style="background-color: #9FAFE8;">
@@ -46,8 +40,6 @@
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
-
-
 
         <nav class="header-nav ms-auto">
             <ul class="d-flex align-items-center">
@@ -298,7 +290,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="informacion.html">
                     <i class="bi bi-info-circle"></i>
-                    <span>Información Veterinaria</span>
+                    <span>Información veterinaria</span>
                 </a>
             </li><!-- End Dashboard Nav -->
 
@@ -311,6 +303,11 @@
         <div class="pagetitle">
             <h1>Servicio de citas</h1>
             <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item">Citas</li>
+                    <li class="breadcrumb-item active">Consultar citas</li>
+                </ol>
 
             </nav>
         </div><!-- End Page Title -->
@@ -344,301 +341,415 @@
                             <div class="tab-content pt-2">
 
                                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
-                                    <h5 class="card-title">Acerca de</h5>
-                                    <p class="small fst-italic">Esteban es un hombre de 35 años que reside en la Ciudad
-                                        de México. Es un
-                                        apasionada de los viajes y siempre está buscando nuevas experiencias culturales.
-                                        Además, disfruta de
-                                        la lectura y la cocina en su tiempo libre.Esteban es Abogado y se ha
-                                        especializado en derechos
-                                        humanos, dedicándose a luchar por la justicia y la igualdad en su país.</p>
-
-                                    <h5 class="card-title">Detalles del perfil</h5>
-
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-4 label ">Nombre</div>
-                                        <div class="col-lg-9 col-md-8">Esteban </div>
+                                    <!--Consultar citas-->
+                                    <br>
+                                    <div class="search-bar">
+                                        <form class="search-form d-flex align-items-center" method="POST" action="#">
+                                            <input type="text" name="query" placeholder="Buscar mascota"
+                                                title="Enter search keyword">
+                                            <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+                                        </form>
                                     </div>
+                                    <br><!-- End Search Bar -->
 
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-4 label">Apellidos</div>
-                                        <div id="ape" class="col-lg-9 col-md-8">Carvajal Castañeda</div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-4 label">Dirección</div>
-                                        <div id="dir" class="col-lg-9 col-md-8">Carr 8 #8 12-25</div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-4 label">Teléfono</div>
-                                        <div id="tel" class="col-lg-9 col-md-8">32145672834</div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-4 label">Email</div>
-                                        <div id="ema" class="col-lg-9 col-md-8">esteban@gmail.com</div>
-                                    </div>
+                                    <table class="table table-bordered text-center">
 
 
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Mascota</th>
+                                                <th scope="col">Fecha</th>
+                                                <th scope="col">Tipo Servicio</th>
+                                                <th scope="col">Estado</th>
+                                                <th scope="col">Detalles</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td></td>
+                                                <td id="puntuacionPromedio">
+
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a href="historialMascota.html" class="btn btn-sm"
+                                                            title="Upload new profile image">
+                                                            <img class="" src="./img/productos_servicios/ver.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                        <a href="" class="btn btn-sm" title="Upload new profile image">
+                                                            <img class="" src="./assets/img/editar 5.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                        <a href="" class="btn btn-sm" title="Upload new profile image">
+                                                            <img class="" src="./assets/img/image 81.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td></td>
+                                                <td>
+                                                    <div id="rating2"></div>
+                                                </td>
+                                                <td> <i class="fa-solid fa-circle-plus" style="color: #4154F1;"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a href="historialMascota.html" class="btn btn-sm"
+                                                            title="Upload new profile image">
+                                                            <img class="" src="./img/productos_servicios/ver.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                        <a href="" class="btn btn-sm" title="Upload new profile image">
+                                                            <img class="" src="./assets/img/editar 5.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                        <a href="" class="btn btn-sm" title="Upload new profile image">
+                                                            <img class="" src="./assets/img/image 81.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td></td>
+                                                <td>
+                                                    <div id="rating3"></div>
+                                                </td>
+                                                <td><i class="fa-solid fa-circle-plus" style="color: #4154F1;"></i></td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a href="historialMascota.html" class="btn btn-sm"
+                                                            title="Upload new profile image">
+                                                            <img class="" src="./img/productos_servicios/ver.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                        <a href="" class="btn btn-sm" title="Upload new profile image">
+                                                            <img class="" src="./assets/img/editar 5.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                        <a href="" class="btn btn-sm" title="Upload new profile image">
+                                                            <img class="" src="./assets/img/image 81.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td></td>
+                                                <td>
+                                                    <div id="ratingd"></div>
+                                                </td>
+                                                <td><i class="fa-solid fa-circle-plus" style="color: #4154F1;"></i></td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a href="historialMascota.html" class="btn btn-sm"
+                                                            title="Upload new profile image">
+                                                            <img class="" src="./img/productos_servicios/ver.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                        <a href="" class="btn btn-sm" title="Upload new profile image">
+                                                            <img class="" src="./assets/img/editar 5.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                        <a href="" class="btn btn-sm" title="Upload new profile image">
+                                                            <img class="" src="./assets/img/image 81.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td></td>
+                                                <td>
+                                                    <div id="rating5"></div>
+                                                </td>
+
+                                                <td><i class="fa-solid fa-circle-plus" style="color: #4154F1;"></i></td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a href="historialMascota.html" class="btn btn-sm"
+                                                            title="Upload new profile image">
+                                                            <img class="" src="./img/productos_servicios/ver.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                        <a href="" class="btn btn-sm" title="Upload new profile image">
+                                                            <img class="" src="./assets/img/editar 5.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                        <a href="" class="btn btn-sm" title="Upload new profile image">
+                                                            <img class="" src="./assets/img/image 81.png" alt=""
+                                                                style="width: 25px;">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
+                                <!--Fin consultar citas-->
+
+
                                 <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <!-- Columna del formulario -->
-                                            <div class="col-md-6 ">
-                                                <div class="card-body" style="background-color:#D9D9D9;">
-
-                                                    <!-- Profile Edit Form -->
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <br>
-                                                            <label for="primerNombre"><strong>Dueño:</strong></label>
-                                                            <input type="text" name="txtnumeroDireccion"
-                                                                class="form-control custom-border custom-bg-fondo ">
-                                                        </div>
-                                                        <div class="col">
-                                                            <br>
-                                                            <label for="primerNombre"><strong>Teléfono:</strong></label>
-                                                            <input type="text" name="txtdireccionEmail"
-                                                                class="form-control custom-border custom-bg-fondo ">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <br>
-                                                            <label
-                                                                for="primerNombre"><strong>Dirección:</strong></label>
-                                                            <input type="text" name="txtnumeroDireccion"
-                                                                class="form-control custom-border custom-bg-fondo ">
-                                                        </div>
-                                                        <div class="col">
-                                                            <br>
-                                                            <label for="primerNombre"><strong>Email:</strong></label>
-                                                            <input type="text" name="txtdireccionEmail"
-                                                                class="form-control custom-border custom-bg-fondo ">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <br>
-                                                            <label for="primerNombre"><strong>Mascota:</strong></label>
-                                                            <select class="form-control">
-                                                                <option>Hércules</option>
-                                                                <option>Mateo</option>
-                                                                <option>chanchito</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col">
-                                                            <br>
-                                                            <label for="primerNombre"><strong>Tipo
-                                                                    cita:</strong></label>
-                                                            <select class="form-control">
-                                                                <option>Traumatología</option>
-                                                                <option>Examenes</option>
-                                                                <option>Laboratorio</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <br>
-                                                            <label for="primerNombre"><strong>Médico:</strong></label>
-                                                            <input type="text" name="txtnumeroDireccion"
-                                                                class="form-control custom-border custom-bg-fondo ">
-                                                        </div>
-                                                        <div class="col">
-                                                            <br>
-                                                            <label for="primerNombre"><strong>Servicio:</strong></label>
-                                                            <select class="form-control">
-                                                                <option>Domicilio</option>
-                                                                <option>Presencial</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="form-group">
-                                                                <label for="inputFecha">Fecha</label>
-                                                                <input type="date" class="form-control" id="inputFecha"
-                                                                    name="fecha">
+                                    <!--Solicitar cita-->
+                                    <form>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <!-- Columna del formulario -->
+                                                <div class="col-8">
+                                                    <div class="card-body" style="background-color:#D9D9D9;">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="dueño"><strong>Dueño:</strong></label>
+                                                                <input type="text" name="txtDueño"
+                                                                    class="form-control custom-border custom-bg-fondo ">
+                                                            </div>
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="telefono"><strong>Teléfono:</strong></label>
+                                                                <input type="text" name="txtTelefono"
+                                                                    class="form-control custom-border custom-bg-fondo ">
                                                             </div>
                                                         </div>
-                                                        <div class="col">
-                                                            <div class="form-group">
-                                                                <label for="inputHora">Hora</label>
-                                                                <input type="time" class="form-control" id="inputHora"
-                                                                    name="hora">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <br>
+                                                                <label
+                                                                    for="direccion"><strong>Dirección:</strong></label>
+                                                                <input type="text" name="txtDireccion"
+                                                                    class="form-control custom-border custom-bg-fondo ">
+                                                            </div>
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="email"><strong>Email:</strong></label>
+                                                                <input type="text" name="txtdireccionEmail"
+                                                                    class="form-control custom-border custom-bg-fondo ">
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <br>
-                                                            <label for="primerNombre"><strong>Valor:</strong></label>
-                                                            <p>20.000 *Incluye domicilio</p>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="mascotas"><strong>Mascota:</strong></label>
+                                                                <select class="form-control">
+                                                                    <option>Hércules</option>
+                                                                    <option>Mateo</option>
+                                                                    <option>chanchito</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="tipocita"><strong>Tipo
+                                                                        cita:</strong></label>
+                                                                <select class="form-control">
+                                                                    <option>Traumatología</option>
+                                                                    <option>Examenes</option>
+                                                                    <option>Laboratorio</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
-                                                        <div class="col">
-                                                            <br>
-                                                            <button type="submit" class="btn custom-negro "
-                                                                style="background-color: #979AD4;"><strong>Solicitar</strong></button>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="medico"><strong>Médico:</strong></label>
+                                                                <input type="text" name="txtMedico"
+                                                                    class="form-control custom-border custom-bg-fondo ">
+                                                            </div>
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="servicio"><strong>Servicio:</strong></label>
+                                                                <select class="form-control">
+                                                                    <option>Domicilio</option>
+                                                                    <option>Presencial</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <br>
+                                                                <div class="form-group">
+                                                                    <label for="inputFecha">Fecha</label>
+                                                                    <input type="date" class="form-control"
+                                                                        id="inputFecha" name="fecha">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <br>
+                                                                    <label for="inputHora">Hora</label>
+                                                                    <input type="time" class="form-control"
+                                                                        id="inputHora" name="hora">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="valor"><strong>Valor:</strong></label>
+                                                                <p>20.000 *Incluye domicilio</p>
+                                                            </div>
+                                                            <div class="col text-center">
+                                                                <br>
+                                                                <button type="submit" class="btn custom-negro "
+                                                                    style="background-color: #979AD4;"><strong>Solicitar</strong></button>
 
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <!-- Columna de la imagen -->
-                                            <div class="col-md-6 calificar-container">
-                                                <div class="circulo-perro">
-                                                    <img src="assets/img/perro.jpg" alt="Imagen del Veterinario">
+                                                <div class="col-4 calificar-container">
+                                                    <div class="circulo-perro">
+                                                        <img src="assets/img/perro.jpg" alt="Imagen del Veterinario">
+                                                    </div>
+                                                    <h4><strong>Hércules</strong> </h4>
+                                                    <h5><strong>Perro-Macho</strong></h5>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
                                 </div>
+                                </form>
+                                <!--Fin solicitar cita-->
 
                                 <div class="tab-pane fade pt-3" id="profile-settings">
-
+                                    <!--Modificar cita-->
                                     <form>
-
-                                        <div id="contenidoTabla">
-                                            <table class="table table-bordered text-center">
-
-                                                <thead>
-                                                    <div class="titulo mb-3">Lista de citas</div>
-
-                                                    <tr>
-                                                        <th scope="col">Mascota</th>
-                                                        <th scope="col">Fecha</th>
-                                                        <th scope="col">tipo de servicio</th>
-                                                        <th scope="col">Estado</th>
-                                                        <th scope="col">Detalles</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row"> <img
-                                                                src="./img/Mascotas_citas/bulldog-frances 1.png"
-                                                                style="height: 30px; width: 30px;">Kiara</th>
-                                                        <td>2023-09-12</td>
-                                                        <td>Estetica</td>
-                                                        <td>Finalizado</td>
-                                                        <td>
-                                                            <div>
-                                                                <a href="historialMascota.html" class="btn  btn-sm"
-                                                                    title="Upload new profile image"><img class=""
-                                                                        src="./img/productos_servicios/ver.png" alt=""
-                                                                        style="width: 25px ;"></a>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="card-body">
+                                                        <h6>Ingrese los datos a actualizar y la razón de modificación de
+                                                            la cita.</h6>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="dueño"><strong>Dueño:</strong></label>
+                                                                <input type="text" name="txtDueño"
+                                                                    class="form-control custom-border custom-bg-fondo ">
                                                             </div>
-                                                        </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row"><img src="./img/Mascotas_citas/gato.png"
-                                                                style="height: 30px; width: 30px;">Gatusin</th>
-                                                        <td>2023-10-10</td>
-                                                        <td>Cirugía</td>
-                                                        <td>Finalizado</td>
-                                                        <td>
-                                                            <div>
-                                                                <a href="" class="btn  btn-sm"
-                                                                    title="Upload new profile image"><img class=""
-                                                                        src="./img/productos_servicios/ver.png" alt=""
-                                                                        style="width: 25px ;"></a>
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="telefono"><strong>Teléfono:</strong></label>
+                                                                <input type="text" name="txtTelefono"
+                                                                    class="form-control custom-border custom-bg-fondo ">
                                                             </div>
-                                                        </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Kiara</th>
-                                                        <td>2023-10-02</td>
-                                                        <td>Urgencias</td>
-                                                        <td>Finalizado</td>
-                                                        <td>
-                                                            <div><!-- End Change Password Form -->
-
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <br>
+                                                                <label
+                                                                    for="direccion"><strong>Dirección:</strong></label>
+                                                                <input type="text" name="txtDireccion"
+                                                                    class="form-control custom-border custom-bg-fondo ">
                                                             </div>
-
-                                                            <div class="tab-pane fade pt-3"
-                                                                id="profile-change-password">
-                                                                <!-- Change Password Form -->
-                                                                <form>
-
-                                                                    <div class="row mb-3">
-                                                                        <label for="currentPassword"
-                                                                            class="col-md-4 col-lg-3 col-form-label"
-                                                                            style="text-align: center;">Desea Eliminar
-                                                                            el Perfil?</label>
-                                                                        <div class="col-md-8 col-lg-9">
-                                                                            <button type="submit" class="btn btn-danger"
-                                                                                style=" color: black;">Eliminar</button>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <p class="small " style="color: black;">🚨
-                                                                        Advertencia importante:
-                                                                        Eliminación
-                                                                        de cuenta 🚨
-                                                                        <br>
-
-                                                                        Estimado usuario,
-                                                                        <br>
-
-                                                                        Queremos informarte sobre las consecuencias de
-                                                                        eliminar tu cuenta. Al
-                                                                        hacerlo, todos los datos
-                                                                        asociados a tu cuenta serán permanentemente
-                                                                        eliminados y no podrán ser
-                                                                        recuperados en el futuro.
-                                                                        Ten en cuenta que al eliminar tu cuenta perderás
-                                                                        acceso a todos los
-                                                                        servicios, información y
-                                                                        contenido relacionado con la misma. Esto incluye
-                                                                        tus mensajes, archivos,
-                                                                        configuraciones
-                                                                        personalizadas y cualquier otra información
-                                                                        guardada en nuestra
-                                                                        plataforma.
-                                                                        <br>
-
-                                                                        Antes de tomar esta decisión, te recomendamos
-                                                                        que consideres todas las
-                                                                        implicaciones. Si tienes
-                                                                        alguna preocupación o duda, nuestro equipo de
-                                                                        soporte estará encantado
-                                                                        de
-                                                                        ayudarte a resolver
-                                                                        cualquier problema que puedas tener.
-                                                                        <br>
-
-                                                                        Recuerda que la eliminación de tu cuenta es una
-                                                                        acción irreversible, por
-                                                                        lo
-                                                                        que te pedimos que
-                                                                        tomes esta decisión con precaución.
-                                                                        <br>
-
-                                                                        ¡Gracias por tu comprensión!
-                                                                        <br>
-
-                                                                        Atentamente,
-                                                                        <br>
-                                                                        El equipo de soporte
-                                                                    </p>
-
-
-                                                                </form><!-- End Change Password Form -->
-
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="email"><strong>Email:</strong></label>
+                                                                <input type="text" name="txtdireccionEmail"
+                                                                    class="form-control custom-border custom-bg-fondo ">
                                                             </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="mascotas"><strong>Mascota:</strong></label>
+                                                                <select class="form-control">
+                                                                    <option>Hércules</option>
+                                                                    <option>Mateo</option>
+                                                                    <option>chanchito</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="tipocita"><strong>Tipo
+                                                                        cita:</strong></label>
+                                                                <select class="form-control">
+                                                                    <option>Traumatología</option>
+                                                                    <option>Examenes</option>
+                                                                    <option>Laboratorio</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="medico"><strong>Médico:</strong></label>
+                                                                <input type="text" name="txtMedico"
+                                                                    class="form-control custom-border custom-bg-fondo ">
+                                                            </div>
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for="servicio"><strong>Servicio:</strong></label>
+                                                                <select class="form-control">
+                                                                    <option>Domicilio</option>
+                                                                    <option>Presencial</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <br>
+                                                                <div class="form-group">
+                                                                    <label
+                                                                        for="inputFecha"><strong>Fecha:</strong></label>
+                                                                    <input type="date" class="form-control"
+                                                                        id="inputFecha" name="fecha">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <br>
+                                                                    <label
+                                                                        for="inputHora"><strong>Hora:</strong></label>
+                                                                    <input type="time" class="form-control"
+                                                                        id="inputHora" name="hora">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <br>
+                                                                <label for=""><strong>Motivo:</strong></label>
+                                                                <input type="text" name="txtDireccion"
+                                                                    class="form-control custom-border custom-bg-fondo ">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 calificar-container">
+                                                    <div class="circulo-imagen">
+                                                        <img src="assets/img/perro.jpg" alt="Imagen del Veterinario">
+                                                    </div>
+                                                    <h4><strong>Hércules</strong> </h4>
+                                                    <h5><strong>Perro-Macho</strong></h5>
+                                                    <div class="col text-center">
+                                                        <br>
+                                                        <button type="submit" class="btn custom-negro "
+                                                            style="background-color: #979AD4;"><strong>Modificar</strong></button>
 
-                                        </div><!-- End Bordered Tabs -->
+                                                    </div>
 
+                                                </div>
+                                            </div>
+                                        </div>
                                 </div>
-                            </div>
-
+                                </form>
+                                <!--Fin modificar cita-->
+                            </div><!-- End Bordered Tabs -->
                         </div>
                     </div>
+                </div>
         </section>
 
     </main><!-- End #main -->
