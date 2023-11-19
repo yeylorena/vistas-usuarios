@@ -45,27 +45,6 @@
   object-fit: cover;
 }
 
-.circulo-perro {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 200px;
-  /* Ajusta el tamaño según sea necesario */
-  height: 200px;
-  /* Ajusta el tamaño según sea necesario */
-  margin: 150px;
-  /* Centrar la imagen */
-  border: 2px solid #000;
-  text-align: center;
-  /* Agrega un contorno de 2px de ancho y color azul (#4154F1) */
-
-}
-
-.circulo-perro img {
-  width: 200%;
-  height: 100%;
-  object-fit: cover;
-}
-
 :root {
   scroll-behavior: smooth;
 }
