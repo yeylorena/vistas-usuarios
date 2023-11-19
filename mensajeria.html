@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mensajería</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body style="background-color: #9FAFE8;">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logoGesVet.png">
+        <span class="d-none d-lg-block">GesVet</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+          </ul><!-- End Notification Dropdown Items -->
+        </li><!-- End Notification Nav -->
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+          </ul><!-- End Messages Dropdown Items -->
+        </li><!-- End Messages Nav -->
+        <li class="nav-item dropdown pe-3">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="img/usuario.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">E. Carvajal</span>
+          </a><!-- End Profile Iamge Icon -->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Esteban Carvajal</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>Mi perfil</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Configuraciones de la cuenta</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Necesitas ayuda?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Salir</span>
+              </a>
+            </li>
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+      </ul>
+    </nav><!-- End Icons Navigation -->
+  </header><!-- End Header -->
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="inicio.html">
+          <i class="bi bi-house"></i>
+          <span>Inicio</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="perfil.html">
+          <i class="bi bi-person"></i>
+          <span>Mi perfil</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="mascotas.html">
+          <i class="bi bi-hearts"></i>
+          <span>Mis mascotas</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="citas.html">
+          <i class="bi bi-chat-quote"></i>
+          <span>Citas</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="mensajeria.html">
+          <i class="bi bi-chat-dots"></i>
+          <span>Mensajes</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="productos_servicios.html">
+          <i class="bi bi-person"></i>
+          <span>Productos y servicios</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="carrito_compras.html">
+          <i class="bi bi-cart2"></i>
+          <span>Carrito de compras</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="informacion.html">
+          <i class="bi bi-info-circle"></i>
+          <span>Información veterinaria</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+    </ul>
+  </aside><!-- End Sidebar-->
+  <main id="main" class="main">
+    <div class="pagetitle">
+      <h1>Mensajería</h1>
+    </div><!-- End Page Title -->
+    <section class="section">
+      <div class="card">
+        <div class="card-body pt-3">
+          <!-- Bordered Tabs -->
+          <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bordered-home"
+                type="button" role="tab" aria-controls="home" aria-selected="true">Nuevo mensaje</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile"
+                type="button" role="tab" aria-controls="profile" aria-selected="false">Recibidos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#bordered-contact"
+                type="button" role="tab" aria-controls="contact" aria-selected="false">Enviados</button>
+            </li>
+          </ul>
+          <div class="tab-content pt-2" id="borderedTabContent">
+            <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-end my-2">
+                    <button type="submit" class="btn fw-bold">Cancelar <i class="bi bi-trash me-1"></i></button>
+                  </div>
+                  <!-- General Form Elements -->
+                  <form>
+                    <div class="row mb-3">
+                      <label for="inputEmail" class="col-sm-2 col-form-label fw-bold">Para:</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="inputEmail" class="col-sm-2 col-form-label fw-bold">Asunto:</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">Mensaje:</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" style="height: 100px"></textarea>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <button type="submit" class="btn fw-bold col-2" style="background-color: #9FAFE8;">Enviar</button>
+                    </div>
+                  </form><!-- End General Form Elements -->
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="d-flex justify-content-end mb-2">
+                <div class="form-check mx-2 my-0 d-flex align-items-center justify-content-center">
+                  <input class="form-check-input me-2 mb-1" type="radio" name="gridRadios" id="gridRadios1"
+                    value="option1">
+                  <label class="form-check-label fw-bold" for="gridRadios1">
+                    Seleccionado
+                  </label>
+                </div>
+                <div class="form-check mx-2 my-0 d-flex align-items-center justify-content-center">
+                  <input class="form-check-input me-2 mb-1" type="radio" name="gridRadios" id="gridRadios2"
+                    value="option2">
+                  <label class="form-check-label fw-bold" for="gridRadios2">
+                    Todo
+                  </label>
+                </div>
+                <button type="submit" class="btn fw-bold d-flex align-items-center justify-content-center">Eliminar <i
+                    class="bi bi-trash me-1"></i></button>
+              </div>
+              <div class="card m-0">
+                <div class="card-body p-0">
+                  <!-- Default Table -->
+                  <table class="table m-0 border">
+                    <tbody>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- End Default Table Example -->
+                </div>
+              </div>
+              <div class="card m-0">
+                <div class="card-body d-flex justify-content-end p-0">
+                  <!-- Pagination with icons -->
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination m-0">
+                      <li class="page-item">
+                        <a class="page-link text-dark" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item "><a class="page-link text-dark" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link text-dark" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav><!-- End Pagination with icons -->
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="bordered-contact" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="d-flex justify-content-end mb-2">
+                <div class="form-check mx-2 my-0 d-flex align-items-center justify-content-center">
+                  <input class="form-check-input me-2 mb-1" type="radio" name="gridRadios" id="gridRadios1"
+                    value="option1">
+                  <label class="form-check-label fw-bold" for="gridRadios1">
+                    Seleccionado
+                  </label>
+                </div>
+                <div class="form-check mx-2 my-0 d-flex align-items-center justify-content-center">
+                  <input class="form-check-input me-2 mb-1" type="radio" name="gridRadios" id="gridRadios2"
+                    value="option2">
+                  <label class="form-check-label fw-bold" for="gridRadios2">
+                    Todo
+                  </label>
+                </div>
+                <button type="submit" class="btn fw-bold d-flex align-items-center justify-content-center">Eliminar <i
+                    class="bi bi-trash me-1"></i></button>
+              </div>
+              <div class="card m-0">
+                <div class="card-body p-0">
+                  <!-- Default Table -->
+                  <table class="table m-0 border">
+                    <tbody>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star"></i>
+                          </label>
+                        </th>
+                        <td class="fw-bold">Comunicado</td>
+                        <td>Esto es un comunicado de prueba, para ver el diseño del mockup...</td>
+                        <td>18:30</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- End Default Table Example -->
+                </div>
+              </div>
+              <div class="card m-0">
+                <div class="card-body d-flex justify-content-end p-0">
+                  <!-- Pagination with icons -->
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination m-0">
+                      <li class="page-item">
+                        <a class="page-link text-dark" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item "><a class="page-link text-dark" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link text-dark" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav><!-- End Pagination with icons -->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Bordered Tabs -->
+        </div>
+      </div>
+    </section>
+  </main><!-- End #main -->
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

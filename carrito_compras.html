@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Carrito de compra</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body style="background-color: #9FAFE8;">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logoGesVet.png">
+        <span class="d-none d-lg-block">GesVet</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+          </ul><!-- End Notification Dropdown Items -->
+        </li><!-- End Notification Nav -->
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+          </ul><!-- End Messages Dropdown Items -->
+        </li><!-- End Messages Nav -->
+        <li class="nav-item dropdown pe-3">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="img/usuario.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">E. Carvajal</span>
+          </a><!-- End Profile Iamge Icon -->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Esteban Carvajal</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>Mi perfil</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Configuraciones de la cuenta</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Necesitas ayuda?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Salir</span>
+              </a>
+            </li>
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+      </ul>
+    </nav><!-- End Icons Navigation -->
+  </header><!-- End Header -->
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="inicio.html">
+          <i class="bi bi-house"></i>
+          <span>Inicio</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="perfil.html">
+          <i class="bi bi-person"></i>
+          <span>Mi perfil</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="mascotas.html">
+          <i class="bi bi-hearts"></i>
+          <span>Mis mascotas</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="citas.html">
+          <i class="bi bi-chat-quote"></i>
+          <span>Citas</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="mensajeria.html">
+          <i class="bi bi-chat-dots"></i>
+          <span>Mensajes</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="productos_servicios.html">
+          <i class="bi bi-person"></i>
+          <span>Productos y servicios</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="carrito_compras.html">
+          <i class="bi bi-cart2"></i>
+          <span>Carrito de compras</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="informacion.html">
+          <i class="bi bi-info-circle"></i>
+          <span>Información veterinaria</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+    </ul>
+  </aside><!-- End Sidebar-->
+  <main id="main" class="main">
+    <div class="pagetitle">
+      <h1>Carrito de compra</h1>
+    </div><!-- End Page Title -->
+    <section class="section">
+      <div class="card">
+        <div class="card-body pt-3">
+          <!-- Bordered Tabs -->
+          <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bordered-home"
+                type="button" role="tab" aria-controls="home" aria-selected="true">Verifica</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile"
+                type="button" role="tab" aria-controls="profile" aria-selected="false">Confirma</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#bordered-contact"
+                type="button" role="tab" aria-controls="contact" aria-selected="false">Historial</button>
+            </li>
+          </ul>
+          <div class="tab-content pt-2" id="borderedTabContent">
+            <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="card m-0">
+                <div class="card-body p-0">
+                  <!-- Default Table -->
+                  <table class="table m-0 border text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Código</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Detalles</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">
+                          <button type="button" class="btn"><img src="img/eliminar.png"></button>
+                        </th>
+                        <td>001</td>
+                        <td>Shampoo</td>
+                        <td>11.200</td>
+                        <td>1</td>
+                        <td>
+                          <button class="btn"><img src="img/consultar.png"></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <button type="button" class="btn"><img src="img/eliminar.png"></button>
+                        </th>
+                        <td>008</td>
+                        <td>Desparasitante</td>
+                        <td>58.500</td>
+                        <td>1</td>
+                        <td>
+                          <button class="btn"><img src="img/consultar.png"></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <button type="button" class="btn"><img src="img/eliminar.png"></button>
+                        </th>
+                        <td>114</td>
+                        <td>Jabón</td>
+                        <td>12.000</td>
+                        <td>1</td>
+                        <td>
+                          <button class="btn"><img src="img/consultar.png"></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <button type="button" class="btn"><img src="img/eliminar.png"></button>
+                        </th>
+                        <td>003</td>
+                        <td>Baño</td>
+                        <td>35.000</td>
+                        <td>1</td>
+                        <td>
+                          <button class="btn"><img src="img/consultar.png"></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <button type="button" class="btn"><img src="img/eliminar.png"></button>
+                        </th>
+                        <td>101</td>
+                        <td>Croquetas</td>
+                        <td>28.300</td>
+                        <td>1</td>
+                        <td>
+                          <button class="btn"><img src="img/consultar.png"></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="fw-bold">Total</td>
+                        <td>127.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- End Default Table Example -->
+                </div>
+              </div>
+              <div class="d-flex mt-3">
+                <button type="button" class="btn fw-bold">Descartar Compra</button>
+                <button type="button" class="btn ms-auto fw-bold" style="background-color: #9FAFE8;">Siguiente</button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
+              <p class="d-flex justify-content-center my-2">Señor/a recuerde tener actualizado sus datos para hacer
+                entrega de sus productos y/o servicios.</p>
+              <div class="card">
+                <div class="card-body">
+                  <!-- Horizontal Form -->
+                  <form>
+                    <div class="row d-flex flex-row justify-content-center my-2">
+                      <div class="col col-5 me-2">
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-5 col-form-label">Nombres:</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" id="inputText">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-5 col-form-label">Documento:</label>
+                          <div class="col-sm-7">
+                            <input type="number" class="form-control" id="inputText">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-5 col-form-label">Teléfono:</label>
+                          <div class="col-sm-7">
+                            <input type="tel" class="form-control" id="inputText">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-5 col-form-label">Tipo de servicio:</label>
+                          <div class="col-sm-7">
+                            <select id="inputState" class="form-select">
+                              <option selected>Domicilio</option>
+                              <option>Presencial</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col col-5 ms-2">
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-5 col-form-label">Apellidos:</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" id="inputText">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-5 col-form-label">Email:</label>
+                          <div class="col-sm-7">
+                            <input type="email" class="form-control" id="inputText">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-5 col-form-label">Dirección:</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" id="inputText">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-5 col-form-label">Medio de pago:</label>
+                          <div class="col-sm-7">
+                            <select id="inputState" class="form-select">
+                              <option selected>Efectivo</option>
+                              <option>Transferencia</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                      <button type="button" class="btn fw-bold">Regresar</button>
+                      <button type="button" class="btn ms-auto fw-bold"
+                        style="background-color: #9FAFE8;">Finalizar</button>
+                    </div>
+                  </form><!-- End Horizontal Form -->
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="bordered-contact" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="d-flex mb-2">
+                <div class="search-bar d-flex align-items-center justify-content-center">
+                  <form class="search-form d-flex align-items-center" method="POST" action="#">
+                    <input type="text" name="query" placeholder="Buscar" title="Enter search keyword">
+                  </form>
+                </div>
+                <div class="form-check ms-auto me-2 my-0 d-flex align-items-center justify-content-center">
+                  <input class="form-check-input me-2 mb-1" type="radio" name="gridRadios" id="gridRadios1"
+                    value="option1">
+                  <label class="form-check-label fw-bold" for="gridRadios1">
+                    Seleccionado
+                  </label>
+                </div>
+                <div class="form-check mx-2 my-0 d-flex align-items-center justify-content-center">
+                  <input class="form-check-input me-2 mb-1" type="radio" name="gridRadios" id="gridRadios2"
+                    value="option2">
+                  <label class="form-check-label fw-bold" for="gridRadios2">
+                    Todo
+                  </label>
+                </div>
+                <button type="submit" class="btn fw-bold d-flex align-items-center justify-content-center">Eliminar <i
+                    class="bi bi-trash me-1"></i></button>
+              </div>
+              <div class="card m-0">
+                <div class="card-body p-0">
+                  <!-- Bordered Table -->
+                  <table class="table table-bordered text-center m-0">
+                    <thead>
+                      <tr>
+                        <th scope="col"># Producto</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Detalles</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <button class="btn"><img src="img/consultar.png"></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <button class="btn"><img src="img/consultar.png"></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <button class="btn"><img src="img/consultar.png"></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <button class="btn"><img src="img/consultar.png"></button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table><!-- End Bordered Table -->
+                </div>
+              </div>
+              <div class="d-flex mt-3">
+                <p class="m-0 fw-bold">Mostrando 1 a 4 de 4 entradas</p>
+                <div class="card m-0 col-2 ms-auto">
+                  <div class="card-body p-0">
+                    <!-- Pagination with icons -->
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination m-0">
+                        <li class="page-item">
+                          <a class="page-link text-dark" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item "><a class="page-link text-dark" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link text-dark" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav><!-- End Pagination with icons -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Bordered Tabs -->
+        </div>
+      </div>
+    </section>
+  </main><!-- End #main -->
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
