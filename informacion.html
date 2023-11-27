@@ -64,6 +64,10 @@
             <i class="bi bi-search"></i>
           </a>
         </li><!-- End Search Icon-->
+        <a class="nav-link nav-icon" href="manual-de-usuario.pdf" download="manual-de-usuario.pdf">
+          <i class="bi bi-journal-bookmark-fill"></i>
+          <span class="badge bg-primary badge-number"></span>
+        </a>
 
         <li class="nav-item dropdown">
 
@@ -318,6 +322,12 @@
           <i class="bi bi-chat-dots"></i>
           <span>Mensajería</span>
         </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="ayuda_cliente.html">
+          <i class="bi bi-question-circle"></i>
+          <span>Centro de ayuda</span>
+        </a>
       </li><!-- End Profile Page Nav -->
 
     </ul>
@@ -363,54 +373,54 @@
                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
                   <!--Informacion-->
                   <div class="container">
+                    <br>
                     <div class="row">
-                      <p> <strong>Siempre estaremos disponibles para brindarte un gran servicio
-                        </strong>
-                      </p>
-                      <div class="col-md-6">
-                        <div class="card" style="width: 28rem;">
+                      <br>
+                      <br>
+                      <br>
+                      <h5><strong>Siempre estaremos disponibles para brindarte un gran
+                          servicio</strong></h5>
+                      <br>
+                      <div class="col-md-6 ">
+                        <div class="card row hover-effect" style="width: 28rem;">
                           <div class="card-body" style="background-color:#D9D9D9;">
                             <p class="card-text">
-                              <br><br>Ofrecemos atención veterinaria las 24/7, con un equipo altamente
-                              capacitado y apasionado por los animales. Tenemos experiencia en diversas especialidades y
-                              creemos en la atención personalizada para cada mascota, garantizando nuestra
-                              disponibilidad
+                              <br><br>Ofrecemos atención veterinaria las 24/7, con un
+                              equipo altamente capacitado y apasionado por los
+                              animales. Tenemos
+                              experiencia en diversas especialidades y creemos en la
+                              atención personalizada
+                              para cada mascota, garantizando nuestra disponibilidad
                               en tus momentos de necesidad.
                             </p>
                             <br>
                           </div>
                         </div>
                       </div>
-
-                      <div class="col-md-6">
-                        <div style="width: 28rem;" style="margin-bottom: 10px">
-                          <ul class="list-group list-group-flush">
-                            <li class="list-group-item" style="background-color:#D9D9D9; margin-bottom: 18px; ">
-                              <img src="assets/img/img1.png" alt="Imagen 3" class="img-thumbnail" width="50"
-                                height="50">
-
-                              Dirección: Calle 49B # 68-18
-                              Neiva-Huila, Colombia
+                      <div class="col-md-6 ">
+                        <div>
+                          <div class="list-group list-group-flush">
+                            <div class="list-group-item hover-item row hover-effect justify-content-center"
+                              style="background-color:#D9D9D9; margin-bottom: 18px; width: 445px; height: 67px;">
+                              <i class="bi bi-geo-alt-fill" style="font-size: 2rem;"></i>
+                              Dirección: Calle 49B # 68-18 Neiva-Huila, Colombia
                               <br>
-                            </li>
-                            <li class="list-group-item" style="background-color:#D9D9D9; margin-bottom: 18px;">
-                              <img src="assets/img/cel 1.png" alt="Imagen 3" class="img-thumbnail" width="50"
-                                height="50">
-
-                              Línea de atención celular:
-                              (+57) 311 291 9198
-                            </li>
-
-                            <li class="list-group-item" style="background-color:#D9D9D9; margin-bottom: 18px;">
-                              <img src="assets/img/tel 1.png" alt="Imagen 3" class="img-thumbnail" width="50"
-                                height="50">
-                              Línea de atención telefónica:
-                              (604) 322 3785
-                            </li>
-                          </ul>
+                            </div>
+                            <div class="list-group-item hover-item row hover-effect justify-content-center"
+                              style="background-color:#D9D9D9; margin-bottom: 18px; width: 445px; height: 67px;">
+                              <i class="bi bi-phone-fill" style="font-size: 2rem;"></i>
+                              Línea de atención celular: (+57) 311 291 9198
+                            </div>
+                            <div class="list-group-item hover-item row hover-effect justify-content-center"
+                              style="background-color:#D9D9D9; margin-bottom: 18px; width: 445px; height: 67px;">
+                              <i class="bi bi-telephone-fill" style="font-size: 2rem;"></i>
+                              Línea de atención telefónica: (604) 322 3785
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
                 <!--Fin información-->
@@ -418,7 +428,7 @@
                 <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
                   <!--Ver veterinarios-->
 
-                  <div id="contenidoDinamico"> </div>
+
                   <div id="contenidoTabla">
                     <table class="table table-bordered text-center">
                       <thead>
@@ -428,54 +438,31 @@
                         <tr>
                           <th scope="col">Nombre</th>
                           <th scope="col">Especialidad</th>
-                          <th scope="col">Puntuación</th>
-                          <th scope="col">Calificar</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row">Dra. Laura Gonzáles</th>
                           <td>Traumatología</td>
-                          <td id="puntuacionPromedio">
-                          </td>
-                          <td>
-                            <a href="javascript:void(0);" onclick="cargarNuevoContenido()" data-id="veterinario1">
-                              <i class="fa-solid fa-circle-plus" style="color: #4154F1;"></i>
-                            </a>
-                          </td>
                         </tr>
                         <tr>
                           <th scope="row">Dr. Juan Perez</th>
                           <td>Cirujano</td>
-                          <td>
-                            <div id="rating2"></div> <!-- Agregado para la puntuación -->
-                          </td>
-                          <td> <i class="fa-solid fa-circle-plus" style="color: #4154F1;"></i>
-                          </td>
                         </tr>
                         <tr>
                           <th scope="row">Dr. Carlos Martinez</th>
                           <td>Anestesiología</td>
-                          <td>
-                            <div id="rating3"></div> <!-- Agregado para la puntuación -->
-                          </td>
-                          <td><i class="fa-solid fa-circle-plus" style="color: #4154F1;"></i></td>
+
                         </tr>
                         <tr>
                           <th scope="row">Dr. Pedro Rodríguez</th>
                           <td>Dermatología</td>
-                          <td>
-                            <div id="ratingd"></div> <!-- Agregado para la puntuación -->
-                          </td>
-                          <td><i class="fa-solid fa-circle-plus" style="color: #4154F1;"></i></td>
+
                         </tr>
                         <tr>
                           <th scope="row">Dra. Sandra Romero</th>
                           <td>Auxiliar</td>
-                          <td>
-                            <div id="rating5"></div> <!-- Agregado para la puntuación -->
-                          </td>
-                          <td><i class="fa-solid fa-circle-plus" style="color: #4154F1;"></i></td>
+
                         </tr>
                       </tbody>
                     </table>
@@ -494,50 +481,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <script>
-    function cargarNuevoContenido(idVeterinario) {
-      // Ocultar la tabla
-      document.getElementById('contenidoTabla').style.display = 'none';
 
-      // Utilizar AJAX para cargar el contenido del nuevo HTML
-      $.get('calificar.html', function (data) {
-        // Mostrar el contenido cargado en el contenedor
-        $('#contenidoDinamico').html(data);
-
-
-      });
-    }
-
-    // Obtener la calificación almacenada en local storage
-    // Obtener la calificación almacenada en local storage
-    const storedRating = localStorage.getItem("rating");
-
-    // Mostrar la calificación en la tabla con iconos de Bootstrap
-    if (storedRating) {
-      const puntuacionPromedio = document.getElementById("puntuacionPromedio");
-      const rating = parseInt(storedRating);
-
-      // Crear un nuevo elemento span para cada estrella y agregarlo al td
-      for (let i = 0; i < rating; i++) {
-        const starIcon = document.createElement("i");
-        starIcon.classList.add("bi", "bi-star-fill", "text-warning");
-
-        const span = document.createElement("span");
-        span.appendChild(starIcon);
-
-        // Agregar el span al td
-        puntuacionPromedio.appendChild(span);
-      }
-    }
-
-    function regresar() {
-      // Mostrar la tabla nuevamente
-      document.getElementById('contenidoTabla').style.display = 'block';
-      // Limpiar el contenido dinámico
-      document.getElementById('contenidoDinamico').innerHTML = '';
-    }
-
-  </script>
 
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

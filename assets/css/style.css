@@ -39,6 +39,15 @@
   /* Agrega un contorno de 2px de ancho y color azul (#4154F1) */
 
 }
+.hover-item:hover {
+  background: #d9d9d9;
+}
+
+.hover-effect:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 4);
+  transform: translateY(-3%);
+  transition: all 400ms ease;
+}
 
 .circulo-imagen img {
   width: 100%;
