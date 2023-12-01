@@ -8,8 +8,10 @@
     <title>User/mascotas</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-
-
+    <!-- app  -->
+    <script src="./js/app.js"></script>
+    <!--SweetAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link
@@ -389,9 +391,9 @@
                                                 <div class="col-6">
                                                     <a href="" class="btn  btn-sm mt-3"
                                                         title="Upload new profile image"><img class=""
-                                                            src="./img/productos_servicios/editar 6.png" alt=""
+                                                            src="./img/productos_servicios/editar 6.png"
                                                             style="width: 25px ;"></a>
-                                                    <a href="#" class="btn  btn-sm mt-3"
+                                                    <a href="" class="btn  btn-sm mt-3"
                                                         title="Remove my profile image"><img class=""
                                                             src="./img/image 57.png" alt="" style="width: 15px ;"></a>
                                                 </div>
@@ -399,16 +401,20 @@
 
 
                                             <ul>
-                                                <li>Nombre: Kiara </li>
+                                                <li>Nombre:David </li>
                                                 <li>Especie: Perro </li>
                                                 <li>Raza: Labrador </li>
                                                 <li>Color: Amarillo </li>
                                                 <li>Edad: 2 año </li>
-                                                <li>Género: Hembra </li>
+                                                <li>Género: Macho </li>
                                             </ul>
                                             <div class="text-center">
                                                 <a href="citas.html" class="btn btn-primary btn-sm">
                                                     Ver citas</a>
+                                            </div>
+                                            <div class="">
+                                                <button onclick="eliminarMas()" type="button" class="btn btn-danger"><i
+                                                        class="bi bi-trash3"></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -438,7 +444,7 @@
                                                 <li>Nombre: Gatusin </li>
                                                 <li>Especie: Gato </li>
                                                 <li>Raza: Criollo </li>
-                                                <li>Color: Amarillo </li>
+                                                <li>Color: Cafe y blanco </li>
                                                 <li>Edad: 1 año </li>
                                                 <li>Género: Macho </li>
                                             </ul>
@@ -447,7 +453,10 @@
                                                     Ver citas</a>
                                             </div>
                                             <!-- boton de alerta   -->
-
+                                            <div class="">
+                                                <button onclick="eliminarMas()" type="button" class="btn btn-danger"><i
+                                                        class="bi bi-trash3"></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -485,16 +494,17 @@
                                 </div>
 
                                 <div class="row mb-3">
-                                    <label for="medicos" class="col-md-4 col-lg-3 col-form-label" style="color: black;">Especie:</label>
+                                    <label for="medicos" class="col-md-4 col-lg-3 col-form-label"
+                                        style="color: black;">Especie:</label>
                                     <div class="col-md-8 col-lg-9">
                                         <select class="form-select">
                                             <option>Perro</option>
                                             <option>Gato</option>
                                             <option>Ave</option>
                                             <option>Caballo</option>
-                                          </select>  
+                                        </select>
                                     </div>
-                                    
+
                                 </div>
 
                                 <div class="row mb-3">
@@ -635,13 +645,13 @@
                                     <thead>
                                         <tr class="table-secondary">
 
-                                            <th scope="col">Mascota</th>
-                                            <th scope="col">Fecha</th>
-                                            <th scope="col">Hora</th>
-                                            <th scope="col">Tipo de Servicio</th>
-                                            <th scope="col">Tipo de cita</th>
-                                            <th scope="col">Médico</th>
-                                            <th scope="col">Estado</th>
+                                            <th scope="col">Foto</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Especie</th>
+                                            <th scope="col">Raza</th>
+                                            <th scope="col">Color</th>
+                                            <th scope="col">Edad</th>
+                                            <th scope="col">Genero</th>
                                             <th scope="col">Opciones</th>
                                         </tr>
                                     </thead>
@@ -649,153 +659,38 @@
                                         <tr>
 
 
+                                            <td><img src="./img/productos_servicios/perro.jpg" height="30px"
+                                                    width="30px"></td>
                                             <td>David</td>
-                                            <td>12/12/2023</td>
-                                            <td>10:20 AM</td>
-                                            <td>Presencial</td>
-                                            <td>Estetica</td>
-                                            <td>Herley Puentes</td>
-                                            <td style="color: red;">Pendiente</td>
+                                            <td>Perro</td>
+                                            <td>Labrador</td>
+                                            <td>Cafe y blanco</td>
+                                            <td>2 años</td>
+                                            <td>Macho</td>
                                             <td>
-                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                                                    data-bs-target="#staticBackdrop" data-target="staticBackdrop"><img
-                                                        src="./img/productos_servicios/perro.jpg" height="35px"
-                                                        width="35px">
-                                                </button>
-                                                <!-- modal de detalles  -->
-                                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                                    data-bs-keyboard="false" tabindex="-1"
-                                                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header" style="background: #9FAFE8;">
-                                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                                                                    Ver mascotas
-                                                                </h1>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body">
+                                                <!-- descargarHistorial  -->
+                                                <a href="historialMascota.html" class="btn btn-secondary"
+                                                    id="descargarHistorial"><i class="bi bi-arrow-down"></i></a>
 
-                                                                <img src="./img/productos_servicios/perro.jpg"
-                                                                    class="mx-auto d-block img-fluid"
-                                                                    style="height: 100px; width: 100px;">
-                                                                <div class="row my-2">
-
-                                                                    <div class="col-6">
-                                                                        <label class="form-label">Nombre:</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="txtId" id="txtId" value="David"
-                                                                            readonly>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                        <label class="form-label">Especie:</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="txtId" id="txtId" value="Perro"
-                                                                            readonly>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="row my-2">
-                                                                    <div class="col-6">
-                                                                        <label class="form-label">Raza:</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="txtId" id="txtId" value="Bulldog"
-                                                                            readonly>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                        <label class="form-label">Color:</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="txtId" id="txtId"
-                                                                            value="Cafe y blanco" readonly>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row my-2">
-                                                                    <div class="col-6">
-                                                                        <label class="form-label">Género:</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="txtId" id="txtId" value="Macho"
-                                                                            readonly>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                        <label class="form-label">Edad:</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="txtId" id="txtId" value="3 años"
-                                                                            readonly>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row my-2">
-                                                                    <div class="col-6">
-                                                                        <label class="form-label">Detalle de la cita:</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="txtId" id="txtId" value="Baño y cepillado"
-                                                                            readonly>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                        <label class="form-label">Fecha y hora de la cita:</label>
-                                                                        <input class="form-control" type="text"
-                                                                            name="txtId" id="txtId" value="12/12/2023 10:20 AM"
-                                                                            readonly>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row my-2">
-                                                                    <!-- boton de descargar el hsitorial medico  -->
-                                                                    <div class="col-6">
-                                                                        <div class="container mt-5">
-                                                                            <h5>Historia médica</h5>
-                                                                            <!-- Botón de descarga -->
-                                                                            <a href="historialMascota.html"
-                                                                                class="btn btn-secondary"
-                                                                                id="descargarHistorial">Descargar</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </td>
                                         </tr>
 
                                         <tr>
 
-                                            <td>David</td>
-                                            <td>12/12/2023</td>
-                                            <td>10:20 AM</td>
-                                            <td>Presencial</td>
-                                            <td>Estetica</td>
-                                            <td>Herley Puentes</td>
-                                            <td style="color: red;">Cancelada</td>
+                                            <td><img src="./img/productos_servicios/gato.jpg" height="30px"
+                                                    width="30px"></td>
+                                            <td>Gatusin</td>
+                                            <td>Gato</td>
+                                            <td>criollo</td>
+                                            <td>Amarillo</td>
+                                            <td>1 año</td>
+                                            <td>Macho</td>
                                             <td>
-                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                                                    data-bs-target="#staticBackdrop" data-target="staticBackdrop"><img
-                                                        src="./img/productos_servicios/perro.jpg" height="35px"
-                                                        width="35px">
-                                                </button>
-                                                <!-- modal de detalles  -->
-
+                                                <!-- descargarHistorial -->
+                                                <a href="historialMascota.html" class="btn btn-secondary"
+                                                    id="descargarHistorial"><i class="bi bi-arrow-down"></i></a>
                                             </td>
 
-                                        </tr>
-
-                                        <tr>
-
-                                            <td>David</td>
-                                            <td>12/12/2023</td>
-                                            <td>10:20 AM</td>
-                                            <td>Presencial</td>
-                                            <td>Estetica</td>
-                                            <td>Herley Puentes</td>
-                                            <td style="color: red;">Finalizado</td>
-                                            <td>
-                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                                                    data-bs-target="#staticBackdrop" data-target="staticBackdrop"><img
-                                                        src="./img/productos_servicios/perro.jpg" height="35px"
-                                                        width="35px">
-                                                </button>
-
-                                                <!-- modal de detalles  -->
-                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>

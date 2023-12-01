@@ -325,3 +325,34 @@ function agregarCarrito() {
   }
 
 })();
+// funcion de eliminar mascota
+function eliminarMas() {
+  Swal.fire({
+    title: "Eliminar mascota",
+    html: `
+      <p>¿Está seguro de desea eliminar la mascota?, Recuerda que no se pueden modificar los cambios y se perdera toda la información.</p>
+      <label for="motivo">Motivo de cancelación:</label>
+      <input type="text" id="motivo" class="swal2-input" placeholder="Escribe el motivo aquí...">`,
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "¡Si, eliminar!",
+    preConfirm: () => {
+      const motivo = document.getElementById('motivo').value;
+      if (!motivo) {
+        Swal.showValidationMessage('Por favor, ingresa el motivo de cancelación.');
+      }
+      return motivo;
+    }
+  }).then((result) => {
+    if (result.isConfirmed) {
+      const motivo = result.value;
+      Swal.fire({
+        title: "Eliminada!",
+        text: `Cita cancelada\nMotivo: ${motivo}`,
+        icon: "success"
+      });
+    }
+  });
+}
