@@ -2,97 +2,87 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>Recuperar Contraseña</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Usuario / Recupera contraseña</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
 
   <!-- Google Fonts -->
-  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" />
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    rel="stylesheet" />
 
   <!-- Favicons -->
-  <link href="../img/productos_servicios/logo.png" rel="icon">
+  <link href="../img/productos_servicios/logo.png" rel="icon" />
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="./css/styles.css" rel="stylesheet" />
 </head>
 
-<body style="background-color: #9FAFE8;">
-
+<body style="background-color: #9fafe8">
   <main>
-    <div class="container">
-
-      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-1">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
-
-              <div class="d-flex justify-content-center py-1">
-                <img src="./img/image 14.png" alt="" style="width: 200px;">
-              </div><!-- End Logo -->
-
-              <div class="card mb-3">
-
-                <div class="card-body " style="width: 400px; background: #FFFFFF;
-                border: 1px solid #000000;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    <div class="container-fluid py-5">
+      <div class="row col-md-12 justify-content-center py-5">
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center py-5">
+          <div class="card mb-3">
+            <div class="card-body" style="
+                  width: 470px;
+                  background: #ffffff;
+                  border: 1px solid #000000;
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 ">
-
-                  <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Recupera tu contraseña</h5>
-                    <p class="text-center small">Ingrese tu email. En un momento te enviaremos un mensaje.</p>
-                  </div>
-
-                  <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-12">
-                      <label for="yourName" class="form-label">Email</label>
-                      <input type="text" name="name" class="form-control" id="yourName" required>
-                      <div class="invalid-feedback">Escribe tu correo electronico</div>
-                    </div>
-
-
-
-
-
-                    <div class="col-12">
-                      <a href="cambiar_contraseña.html" class="btn c w-100"
-                        style="background-color: #979AD4; color: black; display: inline-block; padding: 10px 20px; text-decoration: none;">Enviar</a>
-
-                    </div>
-
-                  </form>
-
+              <div class="col-12 py-1 d-flex align-items-center my-1">
+                <img src="./img/image 14.png" alt=""
+                  style="width: 80px; margin-right: 15px; margin-bottom: 15px" />
+                <div>
+                  <h4 class="card-title fs-4 justify-content-between">
+                    Recuperar Contraseña
+                  </h4>
                 </div>
               </div>
+              <p class="text-center small ustify-content-between mb-0">
+                Ingrese tu email, en un momento te enviaremos un mensaje.
+              </p>
 
-
+              <form class="row g-3 needs-validation py-2" novalidate>
+                <div class="col-12 py-2">
+                  <label for="yourName" class="form-label">Email</label>
+                  <input type="text" name="name" class="form-control" id="yourName" required />
+                  <div class="invalid-feedback">
+                    Escribe el correo electronico
+                  </div>
+                </div>
+                <div class="col-12 py-2">
+                  <a href="cambiar_contraseña.html" class="btn c w-100" style="
+                        background-color: #9fafe8;
+                        color: black;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        text-decoration: none;
+                        padding: 10px;
+                      ">Enviar</a>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-
-      </section>
-
+      </div>
     </div>
-  </main><!-- End #main -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  </main>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
@@ -106,7 +96,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

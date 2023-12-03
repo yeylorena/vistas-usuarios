@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User/Página principal</title>
   <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/inicio.css">
 
   <!-- Favicons -->
   <link href="../img/productos_servicios/logo.png" rel="icon">
@@ -18,20 +19,23 @@
 
     .card-hover {
       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
     }
 
     .card-hover:hover {
-      transform: scale(1.05);
-      box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
-    }
+  transform: scale(1.05);
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
+  background-color: #A0A0A0; /* Cambia el color al pasar el mouse */
+}
+
   </style>
 </head>
 
 <body>
-  <div class="navbar-container" style="position: fixed; top: 0; width: 100%; z-index: 1000;">
-    <div class="container-fluid">
+  <div class="navbar-container " style="position: fixed; top: 0; width: 100%; z-index: 1000;">
+    <div class="container-fluid ">
       <div class="row">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav  class="navbar navbar-expand-lg bg-body-tertiary" >
           <div class="container-fluid col-md-12">
             <img src="./assets/img/logoGesVet.png" alt="" style="margin-right: 40px;" width="100px">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -67,12 +71,12 @@
                   <a class="nav-link custom-btn" href="#" style="margin-right: 25px; font-family: 'Inter';
     font-weight: 600;
     font-size: 18px;
-   border-radius: 8px; color: #000000; background-color: #9FAFE8; border-color: #9FAFE8;" role="button"
+   border-radius: 8px; color: #000000; background-color:rgb(62, 149, 199); border-color:#1f49e2;" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     REGISTRATE
                   </a>
                   <ul class="dropdown-menu" style="background-color: #D9D9D9; border: 1px solid #000;">
-                    <li><a class="dropdown-item" href="#">ADMINISTRADOR</a></li>
+                  
                     <li><a class="dropdown-item" href="registro.html">USUARIO</a></li>
                   </ul>
 
@@ -83,7 +87,7 @@
                   <a class="nav-link custom-btn " href="#" style="margin-right: 25px; font-family: 'Inter';
     font-weight: 600;
     font-size: 18px;
-   border-radius: 8px; color: #000000; background-color: #9FAFE8; border-color: #9FAFE8;" role="button"
+   border-radius: 8px; color: #000000; background-color:rgb(62, 149, 199); border-color: #9FAFE8;" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     INGRESA YA
                   </a>
@@ -99,7 +103,7 @@
       </div>
     </div>
   </div>
-  </div>
+  
 
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -132,7 +136,7 @@
     </button>
   </div>
 
-  <footer id="quienesSomosFooter" class="p-3 " style="background-color: #9FAFE8; color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 64px; line-height: 50px;
+  <footer id="quienesSomosFooter" class="p-3 " style="background-color:rgb(62, 149, 199); color: #faf6f6; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 64px; line-height: 50px;
       text-align: center;">
     <h1 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 50px; line-height: 50px;
         text-align: center;">GesVet</h1>
@@ -159,14 +163,16 @@
   </footer>
 
   <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-3 g-4 p-3 " style="background-color: #9FAFE8;">
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-3 " style="background-color:rgb(62, 149, 199)">
       <div class="col">
         <div class="card h-100 card-hover">
-          <div class="card-body" style=" box-sizing: border-box; background: #D9D9D9;
+          <div class="card-body" style=" box-sizing: border-box; background: #db6a00;
             border: 1px solid #000000;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
             ">
-            <h5 class="card-title p-2" style="text-align: center;">MISIÓN</h5>
+           
+            <h5 class="card-title p-2" style="text-align: center;"> MISIÓN</h5>
+            
             <br>
             <p class="card-text p-2" style="font-family: 'Inter';
 font-style: normal;
@@ -184,7 +190,7 @@ color: #000000;
       </div>
       <div class="col">
         <div class="card h-100 card-hover">
-          <div class="card-body" style=" box-sizing: border-box; background: #D9D9D9;
+          <div class="card-body" style=" box-sizing: border-box; background:rgb(108, 184, 32);
             border: 1px solid #000000;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
             ">
@@ -205,7 +211,7 @@ color: #000000;
       </div>
       <div class="col">
         <div class="card h-100 card-hover">
-          <div class="card-body" style=" box-sizing: border-box; background: #D9D9D9;
+          <div class="card-body" style=" box-sizing: border-box; background: #dd1515;
             border: 1px solid #000000;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
             ">
@@ -239,14 +245,15 @@ color: #000000;
       text-align: center;">
     <h1 style="color: #000000; font-family: 'Inter'; font-style: italic; font-weight: 600; font-size: 30px; line-height: 50px;
         text-align: center;">NUESTROS SERVICIOS</h1>
+        
   </footer>
 
-  <div class="container-fluid " style="background-color: #9FAFE8;">
-    <div class="row col-md-12">
+  <div class="container-fluid " style="background-color:rgb(62, 149, 199)">
+    <div class="row col-md-12 ">
       <div class="col-md-6">
-        <h1 class="p-4" style="text-align: center; font-size: 50px;">GesVet</h1>
-        <br>
-        <p class="p-5" style="font-family: 'Inter';
+        <h1 class="py-5" style="text-align: center; font-size: 50px;">GESVET</h1>
+        
+        <p class="" style="font-family: 'Inter';
  font-style: normal;
       font-weight: 100;
       font-size: 25px;
@@ -283,7 +290,7 @@ color: #000000;
           <img src="./img/Ellipse 27.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
-            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background-color:rgb(62, 149, 199);
                         border-radius: 8px;
                         font-family: 'Inter';
                         font-style: normal;
@@ -304,7 +311,7 @@ color: #000000;
           <img src="./img/Ellipse 4.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
-            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background-color:rgb(62, 149, 199);
                       border-radius: 8px;
                       font-family: 'Inter';
                       font-style: normal;
@@ -326,7 +333,7 @@ color: #000000;
           <img src="./img/Ellipse 6.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
-            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background-color:rgb(62, 149, 199);
                     border-radius: 8px;
                     font-family: 'Inter';
                     font-style: normal;
@@ -348,7 +355,7 @@ color: #000000;
           <img src="./img/Ellipse 28.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
-            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background-color:rgb(62, 149, 199);
                   border-radius: 8px;
                   font-family: 'Inter';
                   font-style: normal;
@@ -375,7 +382,7 @@ color: #000000;
           <img src="./img/Ellipse 21.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
-            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background-color:rgb(62, 149, 199);
                     border-radius: 8px;
                     font-family: 'Inter';
                     font-style: normal;
@@ -397,7 +404,7 @@ color: #000000;
           <img src="./img/Ellipse 29.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
-            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background-color:rgb(62, 149, 199);
                   border-radius: 8px;
                   font-family: 'Inter';
                   font-style: normal;
@@ -419,7 +426,7 @@ color: #000000;
           <img src="./img/Ellipse 30.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
-            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background-color:rgb(62, 149, 199);
                 border-radius: 8px;
                 font-family: 'Inter';
                 font-style: normal;
@@ -441,7 +448,7 @@ color: #000000;
           <img src="./img/Ellipse 22.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
-            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background-color:rgb(62, 149, 199);
               border-radius: 8px;
               font-family: 'Inter';
               font-style: normal;
@@ -468,7 +475,7 @@ color: #000000;
           <img src="./img/image 98.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
-            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background-color:rgb(62, 149, 199);
                   border-radius: 8px;
                   font-family: 'Inter';
                   font-style: normal;
@@ -490,7 +497,7 @@ color: #000000;
           <img src="./img/image 99.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
-            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background-color:rgb(62, 149, 199);
                 border-radius: 8px;
                 font-family: 'Inter';
                 font-style: normal;
@@ -512,7 +519,7 @@ color: #000000;
           <img src="./img/image 100.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
-            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background-color:rgb(62, 149, 199);
               border-radius: 8px;
               font-family: 'Inter';
               font-style: normal;
@@ -534,7 +541,7 @@ color: #000000;
           <img src="./img/Ellipse 19.png" class="card-img-top mx-auto p-2 mb-0" style="width: 100px;" alt="...">
           <div class="card-body d-flex flex-column">
             <!-- Reduce the button width -->
-            <a href="#" class="btn btn-primary mt-auto text-dark" style="background: #9FAFE8;
+            <a href="#" class="btn btn-primary mt-auto text-dark" style="background-color:rgb(62, 149, 199);
             border-radius: 8px;
             font-family: 'Inter';
             font-style: normal;
@@ -568,7 +575,7 @@ text-align: center;">
   text-align: center;">CONTACTO</h1>
   </footer>
   <div id="contacto" class="container-fluid  d-flex justify-content-center align-items-center"
-    style="background-color: #9FAFE8;">
+    style="background-color:rgb(62, 149, 199);">
     <div class="row col-md-12">
       <div class="col-md-3 p-3 text-center">
         <img class="p-3 mx-auto d-block" src="./img/Ellipse 32.png" alt="" style="width: 150px">
@@ -592,7 +599,7 @@ text-align: center;">
     </div>
   </div>
 
-  <div class="container-fluid " style="background-color: #9FAFE8;">
+  <div class="container-fluid " style="background-color:rgb(62, 149, 199);">
     <div class="row col-md-12  p-5">
       <div class="colmd-12">
         <p style="font-family: 'Inter';
@@ -704,7 +711,7 @@ color: #000000;
       </div>
 
       <button type="submit"
-        class="btn btn-primary d-flex flex-column mx-auto text-center justify-content-center align-items-center"
+        class="btn btn-dark d-flex flex-column mx-auto text-center justify-content-center align-items-center"
         style="width: 14%;">Enviar</button>
 
     </div>

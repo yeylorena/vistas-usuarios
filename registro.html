@@ -5,18 +5,18 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Registro Usuario</title>
+  <title> Usuario/Resgistro</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="../img/productos_servicios/logo.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
+
+  <!-- Favicons -->
+  <link href="../img/productos_servicios/logo.png" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,87 +34,68 @@
 </head>
 
 <body style="background-color: #9FAFE8;">
-
   <main>
-    <div class="container">
+    <div class="container-fluid py-3">
 
-      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-0">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
-              <div class="d-flex justify-content-center py-1">
-                <img src="./img/image 14.png" alt="" style="width: 200px;">
-              </div><!-- End Logo -->
+      <div class="row col-md-12 justify-content-center ">
 
-              <div class="card mb-3 ">
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center ">
 
-                <div class="card-body" style="background: #FFFFFF;
+          <div class="card mb-3 ">
+            <div class="card-body " style="width: 400px; background: #FFFFFF;
                 border: 1px solid #000000;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 ">
-
-                  <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4"> Crear una cuenta</h5>
-                    <p class="text-center small">Ingrese la siguiente información para crear una cuenta</p>
-                  </div>
-
-                  <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-12">
-                      <label for="yourName" class="form-label">Usuario</label>
-                      <input type="text" name="name" class="form-control" id="yourName" required>
-                      <div class="invalid-feedback">Escribe un nombre de usuario</div>
-                    </div>
-
-                    <div class="col-12">
-                      <label for="yourPassword" class="form-label">Contraseña</label>
-                      <input type="password" name="password" class="form-control" id="yourPassword" required>
-                      <div class="invalid-feedback">Escribe tu contraseña</div>
-                    </div>
-
-
-
-
-                    <div class="col-12">
-                      <label for="yourPassword" class="form-label">Confirmar contraseña</label>
-                      <input type="password" name="password" class="form-control" id="yourPassword" required>
-                      <div class="invalid-feedback">Contraseña incorreta</div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
-                        <label class="form-check-label" for="acceptTerms">Acepto términos y condiciones </label>
-
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <button class="btn c w-100" style="background-color: #979AD4; color: black;" type="submit">Crear
-                        cuenta</button>
-                    </div>
-
-
-
-                    <div class="col-12">
-                      <p class="small mb-0">¿Ya tienes una cuenta? <a href="login.html">Iniciar Sesión</a></p>
-                    </div>
-                  </form>
-
+              <div class="col-12 py-1 d-flex align-items-center my-1">
+                <img src="./img/image 14.png" alt=""
+                  style="width: 80px; margin-right: 15px; margin-bottom: 15px;">
+                <div>
+                  <h4 class="card-title fs-4 justify-content-between ">Crear una Cuenta</h4>
                 </div>
               </div>
+              <p class="text-center small ustify-content-between mb-0">Ingrese la siguiente información para crear la cuenta</p>
 
-
+              <form class="row g-3 needs-validation py-2" novalidate>
+                <div class="col-12 py-2">
+                  <label for="yourName" class="form-label">Usuario</label>
+                  <input type="text" name="name" class="form-control" id="yourName" required>
+                  <div class="invalid-feedback">Escribe un nombre de usuario</div>
+                </div>
+                <div class="col-12 py-1">
+                  <label for="yourPassword" class="form-label">Contraseña</label>
+                  <input type="password" name="password" class="form-control" id="yourPassword" required>
+                  <div class="invalid-feedback">Escribe tu contraseña</div>
+                </div>
+                <div class="col-12 py-1">
+                  <label for="yourPassword" class="form-label">Confirmar Contraseña</label>
+                  <input type="password" name="password" class="form-control" id="yourPassword" required>
+                  <div class="invalid-feedback">Escribe tu contraseña</div>
+                </div>
+                <div class="col-12 py-1">
+                  <div class="form-check">
+                    <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
+                    <label class="form-check-label" for="acceptTerms">Acepto términos y condiciones </label>
+                  </div>
+                </div>
+                <div class="col-12 py-1">
+                  <a href="login.html" class="btn c w-100"
+                    style="background-color: #9FAFE8; color: black; display: inline-block; width: 100%; text-align: center; text-decoration: none; padding: 10px;">Crear cuenta</a>
+                </div>
+                <div class="col-12 py-2">
+                  <p class="small mb-0">¿Ya tienes una cuenta? <a href="login.html">Iniciar Sesión</a>
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </div>
+      </div>
 
-      </section>
 
     </div>
-  </main><!-- End #main -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  </main>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
